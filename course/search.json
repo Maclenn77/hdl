@@ -12,5 +12,26 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "demo.html",
+    "href": "demo.html",
+    "title": "Interactive Python Demo",
+    "section": "",
+    "text": "This page demonstrates runnable Python code in your browser using Pyodide.\n\n\nTry editing and running this code:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "demo.html#welcome-to-interactive-python",
+    "href": "demo.html#welcome-to-interactive-python",
+    "title": "Interactive Python Demo",
+    "section": "",
+    "text": "This page demonstrates runnable Python code in your browser using Pyodide.\n\n\nTry editing and running this code:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "demo.html#try-it-yourself",
+    "href": "demo.html#try-it-yourself",
+    "title": "Interactive Python Demo",
+    "section": "Try It Yourself!",
+    "text": "Try It Yourself!\nEdit any code block above and click the “Run Code” button to see the results. The Python interpreter runs entirely in your browser!\n\nAvailable Libraries\nPyodide comes with many popular Python packages: - NumPy - Pandas - Matplotlib - SciPy - Scikit-learn - And many more!\nCheck the Pyodide documentation for a complete list of available packages."
   }
 ]
