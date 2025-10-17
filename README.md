@@ -26,7 +26,7 @@ El curso busca proporcionar a los estudiantes de lingüística las competencias 
 - **Institución**: Escuela Nacional de Antropología e Historia (ENAH)
 - **Carrera**: Lingüística
 - **Semestre**: 2026-1
-- **Instructor**: [Información del profesor]
+- **Instructor**: J. P. Pérez Tejada L. de G.
 
 ## Uso del Repositorio
 
