@@ -26,6 +26,7 @@ jobs:
           mkdir -p _deploy
           cp index.html _deploy/
           cp style.css _deploy/
+          cp CNAME _deploy/
           cp -r course/_site _deploy/course
           
       - name: Deploy to GitHub Pages
