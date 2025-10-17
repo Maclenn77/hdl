@@ -123,13 +123,14 @@ h3 {
 }
 
 .disciplines-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 40px;
 }
 
 .discipline-card {
+    flex: 1 1 250px;
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 15px;
