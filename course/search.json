@@ -7,13 +7,6 @@
     "text": "¡Bienvenidos al curso de Herramientas digitales para lingüística!\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "demo.html",
     "href": "demo.html",
     "title": "Interactive Python Demo",
@@ -33,5 +26,40 @@
     "title": "Interactive Python Demo",
     "section": "Try It Yourself!",
     "text": "Try It Yourself!\nEdit any code block above and click the “Run Code” button to see the results. The Python interpreter runs entirely in your browser!\n\nAvailable Libraries\nPyodide comes with many popular Python packages: - NumPy - Pandas - Matplotlib - SciPy - Scikit-learn - And many more!\nCheck the Pyodide documentation for a complete list of available packages."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "sqlite-demo.html",
+    "href": "sqlite-demo.html",
+    "title": "Interactive SQLite Database",
+    "section": "",
+    "text": "Run SQL queries directly in your browser - no server needed!"
+  },
+  {
+    "objectID": "sqlite-demo.html#sqlite-browser",
+    "href": "sqlite-demo.html#sqlite-browser",
+    "title": "Interactive SQLite Database",
+    "section": "",
+    "text": "Run SQL queries directly in your browser - no server needed!"
+  },
+  {
+    "objectID": "sqlite-demo.html#sample-database-schema",
+    "href": "sqlite-demo.html#sample-database-schema",
+    "title": "Interactive SQLite Database",
+    "section": "Sample Database Schema",
+    "text": "Sample Database Schema\nThis demo includes three tables:\n\nStudents Table\n\nid (INTEGER PRIMARY KEY)\nname (TEXT)\nemail (TEXT)\nmajor (TEXT)\ngpa (REAL)\n\n\n\nCourses Table\n\nid (INTEGER PRIMARY KEY)\ncourse_code (TEXT)\ncourse_name (TEXT)\ncredits (INTEGER)\n\n\n\nEnrollments Table\n\nid (INTEGER PRIMARY KEY)\nstudent_id (INTEGER)\ncourse_id (INTEGER)\ngrade (TEXT)"
+  },
+  {
+    "objectID": "sqlite-demo.html#try-these-queries",
+    "href": "sqlite-demo.html#try-these-queries",
+    "title": "Interactive SQLite Database",
+    "section": "Try These Queries",
+    "text": "Try These Queries\nBasic Queries:\n-- Get all students\nSELECT * FROM students;\n\n-- Filter by major\nSELECT * FROM students WHERE major = 'Computer Science';\n\n-- Sort by GPA\nSELECT name, gpa FROM students ORDER BY gpa DESC;\nJoin Queries:\n-- Student enrollments with course names\nSELECT s.name, c.course_name, e.grade \nFROM students s \nJOIN enrollments e ON s.id = e.student_id \nJOIN courses c ON e.course_id = c.id;\n\n-- Students without enrollments\nSELECT s.name FROM students s \nLEFT JOIN enrollments e ON s.id = e.student_id \nWHERE e.id IS NULL;\nAggregations:\n-- Average GPA by major\nSELECT major, ROUND(AVG(gpa), 2) as avg_gpa, COUNT(*) as students\nFROM students \nGROUP BY major;\n\n-- Course enrollment counts\nSELECT c.course_name, COUNT(e.id) as enrolled\nFROM courses c\nLEFT JOIN enrollments e ON c.id = e.course_id\nGROUP BY c.id;\nData Modifications:\n-- Insert new student\nINSERT INTO students (name, email, major, gpa) \nVALUES ('New Student', 'new@university.edu', 'Engineering', 3.5);\n\n-- Update a grade\nUPDATE enrollments SET grade = 'A+' WHERE id = 1;\n\n-- Delete a record\nDELETE FROM enrollments WHERE id = 8;\nAll changes are stored locally in your browser session!"
   }
 ]
