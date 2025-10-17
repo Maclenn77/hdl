@@ -1,0 +1,490 @@
+---
+title: "Interactive SQLite Database"
+format:
+  html:
+    theme: cosmo
+    code-tools: false
+---
+
+## SQLite Browser
+
+Run SQL queries directly in your browser - no server needed!
+
+<div id="app-container"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+
+<style>
+  #app-container {
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  .control-panel {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .btn-primary {
+    background: #007bff;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: #0056b3;
+  }
+  
+  .btn-success {
+    background: #28a745;
+    color: white;
+  }
+  
+  .btn-success:hover {
+    background: #218838;
+  }
+  
+  .btn-danger {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .btn-danger:hover {
+    background: #c82333;
+  }
+  
+  .btn-secondary {
+    background: #6c757d;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background: #545b62;
+  }
+  
+  .btn-small {
+    padding: 4px 12px;
+    font-size: 12px;
+    background: #e9ecef;
+    color: #495057;
+  }
+  
+  .btn-small:hover {
+    background: #dee2e6;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    resize: vertical;
+    margin-bottom: 10px;
+  }
+  
+  textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+  
+  .results-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+  }
+  
+  .error-box {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #f5c6cb;
+    margin-bottom: 20px;
+  }
+  
+  .success-box {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #c3e6cb;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+  }
+  
+  th {
+    background: #e9ecef;
+    font-weight: 600;
+  }
+  
+  tr:hover {
+    background: #f8f9fa;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 40px;
+    color: #6c757d;
+  }
+  
+  .sample-queries {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #495057;
+  }
+  
+  .info-text {
+    color: #6c757d;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+</style>
+
+<script>
+let db = null;
+
+// Initialize SQL.js
+initSqlJs({
+  locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/${file}`
+}).then(function(SQL) {
+  initDatabase(SQL);
+}).catch(function(err) {
+  showError('Failed to load SQL.js: ' + err.message);
+});
+
+function initDatabase(SQL) {
+  try {
+    db = new SQL.Database();
+    
+    // Create sample tables
+    db.run(`
+      CREATE TABLE students (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        email TEXT UNIQUE,
+        major TEXT,
+        gpa REAL
+      );
+    `);
+    
+    db.run(`
+      CREATE TABLE courses (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        course_code TEXT NOT NULL,
+        course_name TEXT NOT NULL,
+        credits INTEGER
+      );
+    `);
+    
+    db.run(`
+      CREATE TABLE enrollments (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        student_id INTEGER,
+        course_id INTEGER,
+        grade TEXT,
+        FOREIGN KEY (student_id) REFERENCES students(id),
+        FOREIGN KEY (course_id) REFERENCES courses(id)
+      );
+    `);
+    
+    // Insert sample data
+    db.run(`
+      INSERT INTO students (name, email, major, gpa) VALUES
+        ('Alice Johnson', 'alice@university.edu', 'Computer Science', 3.8),
+        ('Bob Smith', 'bob@university.edu', 'Mathematics', 3.6),
+        ('Charlie Brown', 'charlie@university.edu', 'Physics', 3.9),
+        ('Diana Prince', 'diana@university.edu', 'Computer Science', 3.7),
+        ('Eve Anderson', 'eve@university.edu', 'Biology', 3.5);
+    `);
+    
+    db.run(`
+      INSERT INTO courses (course_code, course_name, credits) VALUES
+        ('CS101', 'Introduction to Programming', 3),
+        ('CS201', 'Data Structures', 4),
+        ('MATH301', 'Linear Algebra', 3),
+        ('PHYS101', 'Physics I', 4),
+        ('BIO201', 'Molecular Biology', 3);
+    `);
+    
+    db.run(`
+      INSERT INTO enrollments (student_id, course_id, grade) VALUES
+        (1, 1, 'A'),
+        (1, 2, 'A-'),
+        (2, 1, 'B+'),
+        (2, 3, 'A'),
+        (3, 4, 'A'),
+        (4, 1, 'A'),
+        (4, 2, 'B+'),
+        (5, 5, 'A-');
+    `);
+    
+    renderApp();
+    runQuery('SELECT * FROM students;');
+  } catch (err) {
+    showError('Error initializing database: ' + err.message);
+  }
+}
+
+function renderApp() {
+  const container = document.getElementById('app-container');
+  container.innerHTML = `
+    <div class="control-panel">
+      <div class="btn-group">
+        <button class="btn btn-success" onclick="exportDB()">📥 Export Database</button>
+        <label class="btn btn-primary" style="margin: 0; cursor: pointer;">
+          📤 Import Database
+          <input type="file" accept=".sqlite,.db" onchange="importDB(event)" style="display: none;">
+        </label>
+        <button class="btn btn-danger" onclick="resetDB()">🔄 Reset Database</button>
+      </div>
+      
+      <div class="sample-queries">
+        <label>Sample Queries:</label>
+        <div class="btn-group">
+          <button class="btn btn-small" onclick="setQuery('SELECT * FROM students;')">All Students</button>
+          <button class="btn btn-small" onclick="setQuery('SELECT * FROM courses;')">All Courses</button>
+          <button class="btn btn-small" onclick="setQuery('SELECT s.name, c.course_name, e.grade FROM students s JOIN enrollments e ON s.id = e.student_id JOIN courses c ON e.course_id = c.id;')">Enrollments</button>
+          <button class="btn btn-small" onclick="setQuery('SELECT major, COUNT(*) as student_count, AVG(gpa) as avg_gpa FROM students GROUP BY major;')">Stats by Major</button>
+          <button class="btn btn-small" onclick="setQuery('SELECT s.name, COUNT(e.id) as course_count FROM students s LEFT JOIN enrollments e ON s.id = e.student_id GROUP BY s.id;')">Course Counts</button>
+        </div>
+      </div>
+      
+      <label>SQL Query:</label>
+      <textarea id="query-input" rows="6" placeholder="Enter your SQL query here...">SELECT * FROM students;</textarea>
+      
+      <button class="btn btn-primary" onclick="executeQuery()">▶️ Run Query</button>
+      <p class="info-text">💡 Try INSERT, UPDATE, DELETE, or complex JOINs - all changes are local to your browser!</p>
+    </div>
+    
+    <div id="results-area"></div>
+  `;
+}
+
+function setQuery(query) {
+  document.getElementById('query-input').value = query;
+}
+
+function executeQuery() {
+  const query = document.getElementById('query-input').value;
+  runQuery(query);
+}
+
+function runQuery(sql) {
+  const resultsArea = document.getElementById('results-area');
+  
+  try {
+    const results = db.exec(sql);
+    
+    if (results.length === 0) {
+      resultsArea.innerHTML = `
+        <div class="success-box">
+          ✅ Query executed successfully (no results to display)
+        </div>
+      `;
+      return;
+    }
+    
+    let html = '<div class="results-container">';
+    
+    results.forEach((result, idx) => {
+      html += `<h3>Result Set ${idx + 1}</h3>`;
+      html += `<p class="info-text">${result.values.length} row(s) returned</p>`;
+      html += '<div style="overflow-x: auto;"><table>';
+      
+      // Header
+      html += '<thead><tr>';
+      result.columns.forEach(col => {
+        html += `<th>${col}</th>`;
+      });
+      html += '</tr></thead>';
+      
+      // Body
+      html += '<tbody>';
+      result.values.forEach(row => {
+        html += '<tr>';
+        row.forEach(cell => {
+          html += `<td>${cell === null ? '<em style="color: #999;">NULL</em>' : cell}</td>`;
+        });
+        html += '</tr>';
+      });
+      html += '</tbody></table></div>';
+    });
+    
+    html += '</div>';
+    resultsArea.innerHTML = html;
+    
+  } catch (err) {
+    showError(err.message);
+  }
+}
+
+function showError(message) {
+  const resultsArea = document.getElementById('results-area');
+  resultsArea.innerHTML = `
+    <div class="error-box">
+      <strong>❌ Error:</strong><br>
+      ${message}
+    </div>
+  `;
+}
+
+function exportDB() {
+  if (!db) return;
+  const data = db.export();
+  const blob = new Blob([data], { type: 'application/x-sqlite3' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'database.sqlite';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function importDB(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    initSqlJs({
+      locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/${file}`
+    }).then(function(SQL) {
+      const uInt8Array = new Uint8Array(e.target.result);
+      db = new SQL.Database(uInt8Array);
+      runQuery('SELECT name FROM sqlite_master WHERE type="table";');
+      document.getElementById('results-area').innerHTML = 
+        '<div class="success-box">✅ Database imported successfully!</div>' + 
+        document.getElementById('results-area').innerHTML;
+    });
+  };
+  reader.readAsArrayBuffer(file);
+}
+
+function resetDB() {
+  if (confirm('Are you sure you want to reset the database? All changes will be lost.')) {
+    initSqlJs({
+      locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/${file}`
+    }).then(function(SQL) {
+      initDatabase(SQL);
+    });
+  }
+}
+</script>
+
+## Sample Database Schema
+
+This demo includes three tables:
+
+### Students Table
+- id (INTEGER PRIMARY KEY)
+- name (TEXT)
+- email (TEXT)
+- major (TEXT)
+- gpa (REAL)
+
+### Courses Table
+- id (INTEGER PRIMARY KEY)
+- course_code (TEXT)
+- course_name (TEXT)
+- credits (INTEGER)
+
+### Enrollments Table
+- id (INTEGER PRIMARY KEY)
+- student_id (INTEGER)
+- course_id (INTEGER)
+- grade (TEXT)
+
+## Try These Queries
+
+**Basic Queries:**
+```sql
+-- Get all students
+SELECT * FROM students;
+
+-- Filter by major
+SELECT * FROM students WHERE major = 'Computer Science';
+
+-- Sort by GPA
+SELECT name, gpa FROM students ORDER BY gpa DESC;
+```
+
+**Join Queries:**
+```sql
+-- Student enrollments with course names
+SELECT s.name, c.course_name, e.grade 
+FROM students s 
+JOIN enrollments e ON s.id = e.student_id 
+JOIN courses c ON e.course_id = c.id;
+
+-- Students without enrollments
+SELECT s.name FROM students s 
+LEFT JOIN enrollments e ON s.id = e.student_id 
+WHERE e.id IS NULL;
+```
+
+**Aggregations:**
+```sql
+-- Average GPA by major
+SELECT major, ROUND(AVG(gpa), 2) as avg_gpa, COUNT(*) as students
+FROM students 
+GROUP BY major;
+
+-- Course enrollment counts
+SELECT c.course_name, COUNT(e.id) as enrolled
+FROM courses c
+LEFT JOIN enrollments e ON c.id = e.course_id
+GROUP BY c.id;
+```
+
+**Data Modifications:**
+```sql
+-- Insert new student
+INSERT INTO students (name, email, major, gpa) 
+VALUES ('New Student', 'new@university.edu', 'Engineering', 3.5);
+
+-- Update a grade
+UPDATE enrollments SET grade = 'A+' WHERE id = 1;
+
+-- Delete a record
+DELETE FROM enrollments WHERE id = 8;
+```
+
+All changes are stored locally in your browser session!
