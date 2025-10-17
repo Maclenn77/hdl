@@ -1,0 +1,156 @@
+---
+title: "Interactive Python Demo"
+author: "Your Name"
+date: today
+format:
+  html:
+    code-fold: false
+    code-tools: true
+---
+
+## Welcome to Interactive Python!
+
+This page demonstrates runnable Python code in your browser using Pyodide.
+
+### Example 1: Basic Calculations
+
+Try editing and running this code:
+
+```{pyodide-python}
+# Simple calculation
+x = 42
+y = 8
+result = x + y
+
+print(f"The answer is: {result}")
+print(f"x squared is: {x**2}")
+```
+
+### Example 2: Data Analysis with Pandas
+
+```{pyodide-python}
+import pandas as pd
+import numpy as np
+
+# Create a sample dataset
+data = {
+    'Student': ['Alice', 'Bob', 'Charlie', 'Diana', 'Eve'],
+    'Math': [85, 92, 78, 95, 88],
+    'Science': [90, 88, 85, 92, 95],
+    'English': [88, 85, 90, 89, 92]
+}
+
+df = pd.DataFrame(data)
+
+# Calculate average scores
+df['Average'] = df[['Math', 'Science', 'English']].mean(axis=1)
+
+print(df)
+print(f"\nClass average: {df['Average'].mean():.2f}")
+```
+
+### Example 3: Visualization with Matplotlib
+
+```{pyodide-python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate data
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
+
+# Create plot
+plt.figure(figsize=(10, 6))
+plt.plot(x, y1, label='sin(x)', linewidth=2)
+plt.plot(x, y2, label='cos(x)', linewidth=2)
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Trigonometric Functions')
+plt.legend()
+plt.grid(True, alpha=0.3)
+plt.show()
+```
+
+### Example 4: Interactive Statistical Analysis
+
+```{pyodide-python}
+import numpy as np
+from scipy import stats
+
+# Generate random data
+np.random.seed(42)
+data = np.random.normal(loc=100, scale=15, size=1000)
+
+# Calculate statistics
+mean = np.mean(data)
+median = np.median(data)
+std = np.std(data)
+
+print(f"Mean: {mean:.2f}")
+print(f"Median: {median:.2f}")
+print(f"Standard Deviation: {std:.2f}")
+
+# Create histogram
+plt.figure(figsize=(10, 6))
+plt.hist(data, bins=30, edgecolor='black', alpha=0.7)
+plt.axvline(mean, color='red', linestyle='--', linewidth=2, label=f'Mean: {mean:.2f}')
+plt.axvline(median, color='green', linestyle='--', linewidth=2, label=f'Median: {median:.2f}')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.title('Distribution of Data')
+plt.legend()
+plt.grid(True, alpha=0.3)
+plt.show()
+```
+
+### Example 5: Machine Learning Demo
+
+```{pyodide-python}
+from sklearn.linear_model import LinearRegression
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Generate sample data
+np.random.seed(0)
+X = np.linspace(0, 10, 50).reshape(-1, 1)
+y = 2.5 * X.ravel() + np.random.normal(0, 2, 50)
+
+# Train model
+model = LinearRegression()
+model.fit(X, y)
+
+# Make predictions
+y_pred = model.predict(X)
+
+# Plot results
+plt.figure(figsize=(10, 6))
+plt.scatter(X, y, alpha=0.6, label='Data points')
+plt.plot(X, y_pred, 'r-', linewidth=2, label=f'Fit: y = {model.coef_[0]:.2f}x + {model.intercept_:.2f}')
+plt.xlabel('X')
+plt.ylabel('y')
+plt.title('Linear Regression Example')
+plt.legend()
+plt.grid(True, alpha=0.3)
+plt.show()
+
+print(f"Coefficient: {model.coef_[0]:.2f}")
+print(f"Intercept: {model.intercept_:.2f}")
+print(f"R² score: {model.score(X, y):.3f}")
+```
+
+## Try It Yourself!
+
+Edit any code block above and click the "Run Code" button to see the results. The Python interpreter runs entirely in your browser!
+
+### Available Libraries
+
+Pyodide comes with many popular Python packages:
+- NumPy
+- Pandas
+- Matplotlib
+- SciPy
+- Scikit-learn
+- And many more!
+
+Check the [Pyodide documentation](https://pyodide.org/) for a complete list of available packages.

@@ -18,6 +18,9 @@ format:
       - brand
     css: styles.css
     toc: true
-
+    code-fold: false
+    code-tools: true
+    filters:
+      - pyodide
 
 
