@@ -21,9 +21,15 @@ jobs:
           cd course
           quarto render
           
+      - name: Prepare deployment
+        run: |
+          mkdir -p _deploy
+          cp index.html _deploy/
+          cp style.css _deploy/
+          cp -r course/_site _deploy/course
+          
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: course/_site
-          destination_dir: course
+          publish_dir: _deploy
