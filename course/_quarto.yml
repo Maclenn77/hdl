@@ -8,8 +8,13 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: Inicio
+      - href: about.qmd
+        text: Sobre este curso
+      - href: tutorials/index.qmd
+        text: Tutoriales
+
+lang: es
 
 format:
   html:

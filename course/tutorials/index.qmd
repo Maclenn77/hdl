@@ -1,0 +1,14 @@
+---
+title: "Tutoriales"
+date: today
+---
+
+Bienvenido a la sección de tutoriales. Aquí encontrarás guías paso a paso para instalar y configurar herramientas esenciales para nuestro curso.
+
+## Tutorial 1: Instalación del Entorno
+
+Sigue las instrucciones detalladas en el [Instructivo: Instalación de Espacio de Trabajo para Análisis de Datos](instalar_ambiente.qmd) para configurar tu entorno de trabajo con Jupyter Lab, Conda y SQLite.
+
+## Tutorial 2: Guía de Instalación de Git y Configuración de GitHub
+
+Instala Git y configura tu cuenta de GitHub siguiendo estos pasos: [Guía de Instalación de Git y Configuración de GitHub](instalar_git.qmd).

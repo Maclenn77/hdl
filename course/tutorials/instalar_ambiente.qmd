@@ -1,0 +1,249 @@
+---
+title: "Instructivo: Instalación de Espacio de Trabajo para Análisis de Datos"
+date: today
+---
+
+
+Este instructivo te guiará en la instalación de un entorno de trabajo completo con Jupyter Lab, Conda y SQLite en tu sistema operativo.
+
+---
+
+## Windows
+
+### 1. Instalar Conda (Miniconda)
+
+1. Descarga Miniconda desde: https://docs.conda.io/en/latest/miniconda.html
+2. Ejecuta el instalador descargado (.exe)
+3. Durante la instalación:
+   - Marca la opción "Add Miniconda3 to my PATH environment variable" (aunque aparezca como no recomendado, facilitará el uso)
+   - Completa la instalación con las opciones predeterminadas
+
+4. Abre **Anaconda Prompt** desde el menú inicio
+5. Verifica la instalación:
+   ```bash
+   conda --version
+   ```
+
+### 2. Crear y configurar el entorno
+
+En Anaconda Prompt, ejecuta:
+
+```bash
+# Crear entorno con Python
+conda create -n analisis python=3.11
+
+# Activar el entorno
+conda activate analisis
+
+# Instalar paquetes necesarios
+conda install -c conda-forge jupyterlab pandas scipy matplotlib numpy nltk pytest
+
+# Instalar SQLite (ya viene incluido con Python, pero verificamos)
+conda install sqlite
+```
+
+### 3. Verificar instalación
+
+```bash
+# Iniciar Jupyter Lab
+jupyter lab
+```
+
+Se abrirá tu navegador con Jupyter Lab. Para verificar los paquetes, crea un nuevo notebook y ejecuta:
+
+```python
+import pandas as pd
+import scipy
+import matplotlib.pyplot as plt
+import numpy as np
+import nltk
+import pytest
+import sqlite3
+
+print("¡Todas las librerías funcionan correctamente!")
+```
+
+---
+
+## Linux (Ubuntu/Debian)
+
+### 1. Instalar Conda (Miniconda)
+
+Abre la terminal y ejecuta:
+
+```bash
+# Descargar Miniconda
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+# Dar permisos de ejecución
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+
+# Ejecutar instalador
+./Miniconda3-latest-Linux-x86_64.sh
+```
+
+Durante la instalación:
+- Lee y acepta la licencia (presiona Enter, luego escribe "yes")
+- Confirma la ubicación de instalación (presiona Enter)
+- Cuando pregunte "Do you wish to initialize Miniconda3", escribe **yes**
+
+Cierra y vuelve a abrir la terminal, o ejecuta:
+```bash
+source ~/.bashrc
+```
+
+Verifica la instalación:
+```bash
+conda --version
+```
+
+### 2. Crear y configurar el entorno
+
+```bash
+# Crear entorno con Python
+conda create -n analisis python=3.11
+
+# Activar el entorno
+conda activate analisis
+
+# Instalar paquetes necesarios
+conda install -c conda-forge jupyterlab pandas scipy matplotlib numpy nltk pytest
+
+# SQLite generalmente ya está instalado, pero puedes verificar
+conda install sqlite
+```
+
+### 3. Verificar instalación
+
+```bash
+# Iniciar Jupyter Lab
+jupyter lab
+```
+
+Ejecuta el mismo código de verificación mostrado en la sección de Windows.
+
+---
+
+## macOS
+
+### 1. Instalar Homebrew (si no lo tienes)
+
+Abre Terminal y ejecuta:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Sigue las instrucciones que aparezcan en pantalla. Después de la instalación, es posible que necesites agregar Homebrew al PATH como te indique el instalador.
+
+### 2. Instalar Conda usando Homebrew
+
+```bash
+# Instalar Miniconda
+brew install --cask miniconda
+
+# Inicializar conda para tu shell
+conda init "$(basename "${SHELL}")"
+```
+
+Cierra y vuelve a abrir la Terminal, o ejecuta:
+```bash
+source ~/.zshrc  # o ~/.bash_profile si usas bash
+```
+
+Verifica la instalación:
+```bash
+conda --version
+```
+
+### 3. Crear y configurar el entorno
+
+```bash
+# Crear entorno con Python
+conda create -n analisis python=3.11
+
+# Activar el entorno
+conda activate analisis
+
+# Instalar paquetes necesarios
+conda install -c conda-forge jupyterlab pandas scipy matplotlib numpy nltk pytest
+
+# Instalar SQLite
+conda install sqlite
+```
+
+### 4. Verificar instalación
+
+```bash
+# Iniciar Jupyter Lab
+jupyter lab
+```
+
+Ejecuta el código de verificación mencionado anteriormente.
+
+---
+
+## Comandos Útiles para Todos los Sistemas
+
+### Activar/Desactivar el entorno
+
+```bash
+# Activar el entorno
+conda activate analisis
+
+# Desactivar el entorno
+conda deactivate
+```
+
+### Actualizar paquetes
+
+```bash
+# Con el entorno activado
+conda update --all
+```
+
+### Listar paquetes instalados
+
+```bash
+conda list
+```
+
+### Usar SQLite
+
+Desde la terminal con el entorno activado:
+```bash
+sqlite3 mi_base_datos.db
+```
+
+O desde Python/Jupyter:
+```python
+import sqlite3
+conn = sqlite3.connect('mi_base_datos.db')
+```
+
+---
+
+## Solución de Problemas Comunes
+
+**Problema:** "conda: command not found"
+- **Solución:** Cierra y vuelve a abrir la terminal, o reinicia tu computadora
+
+**Problema:** Jupyter Lab no se abre automáticamente
+- **Solución:** Copia la URL que aparece en la terminal (empieza con http://localhost:8888) y pégala en tu navegador
+
+**Problema:** Error al importar librerías
+- **Solución:** Verifica que el entorno esté activado (`conda activate analisis`)
+
+**Problema:** En macOS, error con permisos
+- **Solución:** Puede que necesites usar `sudo` antes de algunos comandos de Homebrew
+
+---
+
+## Notas Adicionales
+
+- Siempre activa el entorno `analisis` antes de trabajar: `conda activate analisis`
+- Para desinstalar todo, simplemente elimina el entorno: `conda env remove -n analisis`
+- Puedes crear múltiples entornos para diferentes proyectos
+- SQLite no requiere servidor, los archivos de base de datos son archivos .db en tu sistema
+
+Si tienes algún problema en la instalación, contacta al tutor.

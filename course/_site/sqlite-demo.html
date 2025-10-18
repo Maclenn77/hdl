@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Herramientas digitales para lingüística</title>
+<title>Interactive SQLite Database – Herramientas digitales para lingüística</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -128,7 +128,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
@@ -150,15 +150,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sqlite-browser" id="toc-sqlite-browser" class="nav-link active" data-scroll-target="#sqlite-browser">SQLite Browser</a></li>
+  <li><a href="#sample-database-schema" id="toc-sample-database-schema" class="nav-link" data-scroll-target="#sample-database-schema">Sample Database Schema</a>
+  <ul class="collapse">
+  <li><a href="#students-table" id="toc-students-table" class="nav-link" data-scroll-target="#students-table">Students Table</a></li>
+  <li><a href="#courses-table" id="toc-courses-table" class="nav-link" data-scroll-target="#courses-table">Courses Table</a></li>
+  <li><a href="#enrollments-table" id="toc-enrollments-table" class="nav-link" data-scroll-target="#enrollments-table">Enrollments Table</a></li>
+  </ul></li>
+  <li><a href="#try-these-queries" id="toc-try-these-queries" class="nav-link" data-scroll-target="#try-these-queries">Try These Queries</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Herramientas digitales para lingüística</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title">Interactive SQLite Database</h1>
 </div>
 
 
@@ -175,12 +188,486 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>¡Bienvenidos al curso de Herramientas digitales para lingüística!</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<section id="sqlite-browser" class="level2">
+<h2 class="anchored" data-anchor-id="sqlite-browser">SQLite Browser</h2>
+<p>Run SQL queries directly in your browser - no server needed!</p>
+<div id="app-container">
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+<style>
+  #app-container {
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  .control-panel {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .btn-primary {
+    background: #007bff;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: #0056b3;
+  }
+  
+  .btn-success {
+    background: #28a745;
+    color: white;
+  }
+  
+  .btn-success:hover {
+    background: #218838;
+  }
+  
+  .btn-danger {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .btn-danger:hover {
+    background: #c82333;
+  }
+  
+  .btn-secondary {
+    background: #6c757d;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background: #545b62;
+  }
+  
+  .btn-small {
+    padding: 4px 12px;
+    font-size: 12px;
+    background: #e9ecef;
+    color: #495057;
+  }
+  
+  .btn-small:hover {
+    background: #dee2e6;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    resize: vertical;
+    margin-bottom: 10px;
+  }
+  
+  textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+  
+  .results-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+  }
+  
+  .error-box {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #f5c6cb;
+    margin-bottom: 20px;
+  }
+  
+  .success-box {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #c3e6cb;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+  }
+  
+  th {
+    background: #e9ecef;
+    font-weight: 600;
+  }
+  
+  tr:hover {
+    background: #f8f9fa;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 40px;
+    color: #6c757d;
+  }
+  
+  .sample-queries {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #495057;
+  }
+  
+  .info-text {
+    color: #6c757d;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+</style>
+<script>
+let db = null;
+
+// Initialize SQL.js
+initSqlJs({
+  locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/${file}`
+}).then(function(SQL) {
+  initDatabase(SQL);
+}).catch(function(err) {
+  showError('Failed to load SQL.js: ' + err.message);
+});
+
+function initDatabase(SQL) {
+  try {
+    db = new SQL.Database();
+    
+    // Create sample tables
+    db.run(`
+      CREATE TABLE students (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        email TEXT UNIQUE,
+        major TEXT,
+        gpa REAL
+      );
+    `);
+    
+    db.run(`
+      CREATE TABLE courses (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        course_code TEXT NOT NULL,
+        course_name TEXT NOT NULL,
+        credits INTEGER
+      );
+    `);
+    
+    db.run(`
+      CREATE TABLE enrollments (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        student_id INTEGER,
+        course_id INTEGER,
+        grade TEXT,
+        FOREIGN KEY (student_id) REFERENCES students(id),
+        FOREIGN KEY (course_id) REFERENCES courses(id)
+      );
+    `);
+    
+    // Insert sample data
+    db.run(`
+      INSERT INTO students (name, email, major, gpa) VALUES
+        ('Alice Johnson', 'alice@university.edu', 'Computer Science', 3.8),
+        ('Bob Smith', 'bob@university.edu', 'Mathematics', 3.6),
+        ('Charlie Brown', 'charlie@university.edu', 'Physics', 3.9),
+        ('Diana Prince', 'diana@university.edu', 'Computer Science', 3.7),
+        ('Eve Anderson', 'eve@university.edu', 'Biology', 3.5);
+    `);
+    
+    db.run(`
+      INSERT INTO courses (course_code, course_name, credits) VALUES
+        ('CS101', 'Introduction to Programming', 3),
+        ('CS201', 'Data Structures', 4),
+        ('MATH301', 'Linear Algebra', 3),
+        ('PHYS101', 'Physics I', 4),
+        ('BIO201', 'Molecular Biology', 3);
+    `);
+    
+    db.run(`
+      INSERT INTO enrollments (student_id, course_id, grade) VALUES
+        (1, 1, 'A'),
+        (1, 2, 'A-'),
+        (2, 1, 'B+'),
+        (2, 3, 'A'),
+        (3, 4, 'A'),
+        (4, 1, 'A'),
+        (4, 2, 'B+'),
+        (5, 5, 'A-');
+    `);
+    
+    renderApp();
+    runQuery('SELECT * FROM students;');
+  } catch (err) {
+    showError('Error initializing database: ' + err.message);
+  }
+}
+
+function renderApp() {
+  const container = document.getElementById('app-container');
+  container.innerHTML = `
+    <div class="control-panel">
+      <div class="btn-group">
+        <button class="btn btn-success" onclick="exportDB()">📥 Export Database</button>
+        <label class="btn btn-primary" style="margin: 0; cursor: pointer;">
+          📤 Import Database
+          <input type="file" accept=".sqlite,.db" onchange="importDB(event)" style="display: none;">
+        </label>
+        <button class="btn btn-danger" onclick="resetDB()">🔄 Reset Database</button>
+      </div>
+      
+      <div class="sample-queries">
+        <label>Sample Queries:</label>
+        <div class="btn-group">
+          <button class="btn btn-small" onclick="setQuery('SELECT * FROM students;')">All Students</button>
+          <button class="btn btn-small" onclick="setQuery('SELECT * FROM courses;')">All Courses</button>
+          <button class="btn btn-small" onclick="setQuery('SELECT s.name, c.course_name, e.grade FROM students s JOIN enrollments e ON s.id = e.student_id JOIN courses c ON e.course_id = c.id;')">Enrollments</button>
+          <button class="btn btn-small" onclick="setQuery('SELECT major, COUNT(*) as student_count, AVG(gpa) as avg_gpa FROM students GROUP BY major;')">Stats by Major</button>
+          <button class="btn btn-small" onclick="setQuery('SELECT s.name, COUNT(e.id) as course_count FROM students s LEFT JOIN enrollments e ON s.id = e.student_id GROUP BY s.id;')">Course Counts</button>
+        </div>
+      </div>
+      
+      <label>SQL Query:</label>
+      <textarea id="query-input" rows="6" placeholder="Enter your SQL query here...">SELECT * FROM students;</textarea>
+      
+      <button class="btn btn-primary" onclick="executeQuery()">▶️ Run Query</button>
+      <p class="info-text">💡 Try INSERT, UPDATE, DELETE, or complex JOINs - all changes are local to your browser!</p>
+    </div>
+    
+    <div id="results-area"></div>
+  `;
+}
+
+function setQuery(query) {
+  document.getElementById('query-input').value = query;
+}
+
+function executeQuery() {
+  const query = document.getElementById('query-input').value;
+  runQuery(query);
+}
+
+function runQuery(sql) {
+  const resultsArea = document.getElementById('results-area');
+  
+  try {
+    const results = db.exec(sql);
+    
+    if (results.length === 0) {
+      resultsArea.innerHTML = `
+        <div class="success-box">
+          ✅ Query executed successfully (no results to display)
+        </div>
+      `;
+      return;
+    }
+    
+    let html = '<div class="results-container">';
+    
+    results.forEach((result, idx) => {
+      html += `<h3>Result Set ${idx + 1}</h3>`;
+      html += `<p class="info-text">${result.values.length} row(s) returned</p>`;
+      html += '<div style="overflow-x: auto;"><table>';
+      
+      // Header
+      html += '<thead><tr>';
+      result.columns.forEach(col => {
+        html += `<th>${col}</th>`;
+      });
+      html += '</tr></thead>';
+      
+      // Body
+      html += '<tbody>';
+      result.values.forEach(row => {
+        html += '<tr>';
+        row.forEach(cell => {
+          html += `<td>${cell === null ? '<em style="color: #999;">NULL</em>' : cell}</td>`;
+        });
+        html += '</tr>';
+      });
+      html += '</tbody></table></div>';
+    });
+    
+    html += '</div>';
+    resultsArea.innerHTML = html;
+    
+  } catch (err) {
+    showError(err.message);
+  }
+}
+
+function showError(message) {
+  const resultsArea = document.getElementById('results-area');
+  resultsArea.innerHTML = `
+    <div class="error-box">
+      <strong>❌ Error:</strong><br>
+      ${message}
+    </div>
+  `;
+}
+
+function exportDB() {
+  if (!db) return;
+  const data = db.export();
+  const blob = new Blob([data], { type: 'application/x-sqlite3' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'database.sqlite';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function importDB(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    initSqlJs({
+      locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/${file}`
+    }).then(function(SQL) {
+      const uInt8Array = new Uint8Array(e.target.result);
+      db = new SQL.Database(uInt8Array);
+      runQuery('SELECT name FROM sqlite_master WHERE type="table";');
+      document.getElementById('results-area').innerHTML = 
+        '<div class="success-box">✅ Database imported successfully!</div>' + 
+        document.getElementById('results-area').innerHTML;
+    });
+  };
+  reader.readAsArrayBuffer(file);
+}
+
+function resetDB() {
+  if (confirm('Are you sure you want to reset the database? All changes will be lost.')) {
+    initSqlJs({
+      locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/${file}`
+    }).then(function(SQL) {
+      initDatabase(SQL);
+    });
+  }
+}
+</script>
+</section>
+<section id="sample-database-schema" class="level2">
+<h2 class="anchored" data-anchor-id="sample-database-schema">Sample Database Schema</h2>
+<p>This demo includes three tables:</p>
+<section id="students-table" class="level3">
+<h3 class="anchored" data-anchor-id="students-table">Students Table</h3>
+<ul>
+<li>id (INTEGER PRIMARY KEY)</li>
+<li>name (TEXT)</li>
+<li>email (TEXT)</li>
+<li>major (TEXT)</li>
+<li>gpa (REAL)</li>
+</ul>
+</section>
+<section id="courses-table" class="level3">
+<h3 class="anchored" data-anchor-id="courses-table">Courses Table</h3>
+<ul>
+<li>id (INTEGER PRIMARY KEY)</li>
+<li>course_code (TEXT)</li>
+<li>course_name (TEXT)</li>
+<li>credits (INTEGER)</li>
+</ul>
+</section>
+<section id="enrollments-table" class="level3">
+<h3 class="anchored" data-anchor-id="enrollments-table">Enrollments Table</h3>
+<ul>
+<li>id (INTEGER PRIMARY KEY)</li>
+<li>student_id (INTEGER)</li>
+<li>course_id (INTEGER)</li>
+<li>grade (TEXT)</li>
+</ul>
+</section>
+</section>
+<section id="try-these-queries" class="level2">
+<h2 class="anchored" data-anchor-id="try-these-queries">Try These Queries</h2>
+<p><strong>Basic Queries:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- Get all students</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> students;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">-- Filter by major</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> students <span class="kw">WHERE</span> major <span class="op">=</span> <span class="st">'Computer Science'</span>;</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">-- Sort by GPA</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> name, gpa <span class="kw">FROM</span> students <span class="kw">ORDER</span> <span class="kw">BY</span> gpa <span class="kw">DESC</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Join Queries:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- Student enrollments with course names</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> s.name, c.course_name, e.grade </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> students s </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">JOIN</span> enrollments e <span class="kw">ON</span> s.<span class="kw">id</span> <span class="op">=</span> e.student_id </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">JOIN</span> courses c <span class="kw">ON</span> e.course_id <span class="op">=</span> c.<span class="kw">id</span>;</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">-- Students without enrollments</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> s.name <span class="kw">FROM</span> students s </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="kw">LEFT</span> <span class="kw">JOIN</span> enrollments e <span class="kw">ON</span> s.<span class="kw">id</span> <span class="op">=</span> e.student_id </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> e.<span class="kw">id</span> <span class="kw">IS</span> <span class="kw">NULL</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Aggregations:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- Average GPA by major</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> major, <span class="fu">ROUND</span>(<span class="fu">AVG</span>(gpa), <span class="dv">2</span>) <span class="kw">as</span> avg_gpa, <span class="fu">COUNT</span>(<span class="op">*</span>) <span class="kw">as</span> students</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> students </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> major;</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">-- Course enrollment counts</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> c.course_name, <span class="fu">COUNT</span>(e.<span class="kw">id</span>) <span class="kw">as</span> enrolled</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> courses c</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="kw">LEFT</span> <span class="kw">JOIN</span> enrollments e <span class="kw">ON</span> c.<span class="kw">id</span> <span class="op">=</span> e.course_id</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> c.<span class="kw">id</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Data Modifications:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- Insert new student</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">INSERT</span> <span class="kw">INTO</span> students (name, email, major, gpa) </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">VALUES</span> (<span class="st">'New Student'</span>, <span class="st">'new@university.edu'</span>, <span class="st">'Engineering'</span>, <span class="fl">3.5</span>);</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">-- Update a grade</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="kw">UPDATE</span> enrollments <span class="kw">SET</span> grade <span class="op">=</span> <span class="st">'A+'</span> <span class="kw">WHERE</span> <span class="kw">id</span> <span class="op">=</span> <span class="dv">1</span>;</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">-- Delete a record</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="kw">DELETE</span> <span class="kw">FROM</span> enrollments <span class="kw">WHERE</span> <span class="kw">id</span> <span class="op">=</span> <span class="dv">8</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>All changes are stored locally in your browser session!</p>
 
 
-<!-- -->
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -253,57 +740,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
-    }
-    const viewSource = window.document.getElementById('quarto-view-source') ||
-                       window.document.getElementById('quarto-code-tools-source');
-    if (viewSource) {
-      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-      viewSource.addEventListener("click", function(e) {
-        if (sourceUrl) {
-          // rstudio viewer pane
-          if (/\bcapabilities=\b/.test(window.location)) {
-            window.open(sourceUrl);
-          } else {
-            window.location.href = sourceUrl;
-          }
-        } else {
-          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-          modal.show();
-        }
-        return false;
-      });
-    }
-    function toggleCodeHandler(show) {
-      return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
-          if (show) {
-            details.open = true;
-          } else {
-            details.removeAttribute("open");
-          }
-        }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-        const fromCls = show ? "hidden" : "unhidden";
-        const toCls = show ? "unhidden" : "hidden";
-        for (let i=0; i<cellCodeDivs.length; i++) {
-          const codeDiv = cellCodeDivs[i];
-          if (codeDiv.classList.contains(fromCls)) {
-            codeDiv.classList.remove(fromCls);
-            codeDiv.classList.add(toCls);
-          } 
-        }
-        return false;
-      }
-    }
-    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-    if (hideAllCode) {
-      hideAllCode.addEventListener("click", toggleCodeHandler(false));
-    }
-    const showAllCode = window.document.getElementById("quarto-show-all-code");
-    if (showAllCode) {
-      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -633,15 +1069,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     }
   });
-  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Herramientas digitales para lingüística"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>¡Bienvenidos al curso de Herramientas digitales para lingüística!</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>To learn more about Quarto websites visit <span class="ot">&lt;https://quarto.org/docs/websites&gt;</span>.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
-</div></div></div></div></div>
+  </script>
 </div> <!-- /content -->
 
 
