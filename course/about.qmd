@@ -1,5 +1,13 @@
 ---
-title: "About"
+title: "Sobre este curso"
 ---
 
-About this site
+Este curso está diseñado para proporcionar a los estudiantes de lingüística las habilidades necesarias para utilizar herramientas digitales en el análisis y la investigación lingüística. A lo largo del curso, exploraremos diversas tecnologías y metodologías que facilitan el trabajo con datos lingüísticos.
+
+## Prerrequisitos
+
+No se requieren conocimientos previos en programación o análisis de datos. Sin embargo, se recomienda tener una familiaridad básica con el uso de computadoras y navegación por internet.
+
+## Recursos necesarios
+
+Para aprovechar al máximo este curso, los estudiantes necesitarán acceso a una computadora con conexión a internet. Se utilizarán herramientas de software de código abierto, por lo que no se requiere la compra de licencias adicionales.

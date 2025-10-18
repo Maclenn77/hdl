@@ -23,6 +23,7 @@ format:
       - brand
     css: styles.css
     toc: true
+    toc-title: "En este capítulo"
     code-fold: false
     code-tools: true
     filters:
