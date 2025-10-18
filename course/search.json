@@ -28,11 +28,130 @@
     "text": "Try It Yourself!\nEdit any code block above and click the “Run Code” button to see the results. The Python interpreter runs entirely in your browser!\n\nAvailable Libraries\nPyodide comes with many popular Python packages: - NumPy - Pandas - Matplotlib - SciPy - Scikit-learn - And many more!\nCheck the Pyodide documentation for a complete list of available packages."
   },
   {
+    "objectID": "tutorials/index.html",
+    "href": "tutorials/index.html",
+    "title": "Tutoriales",
+    "section": "",
+    "text": "Bienvenido a la sección de tutoriales. Aquí encontrarás guías paso a paso para instalar y configurar herramientas esenciales para nuestro curso."
+  },
+  {
+    "objectID": "tutorials/index.html#tutorial-1-instalación-del-entorno",
+    "href": "tutorials/index.html#tutorial-1-instalación-del-entorno",
+    "title": "Tutoriales",
+    "section": "Tutorial 1: Instalación del Entorno",
+    "text": "Tutorial 1: Instalación del Entorno\nSigue las instrucciones detalladas en el Instructivo: Instalación de Espacio de Trabajo para Análisis de Datos para configurar tu entorno de trabajo con Jupyter Lab, Conda y SQLite."
+  },
+  {
+    "objectID": "tutorials/index.html#tutorial-2-guía-de-instalación-de-git-y-configuración-de-github",
+    "href": "tutorials/index.html#tutorial-2-guía-de-instalación-de-git-y-configuración-de-github",
+    "title": "Tutoriales",
+    "section": "Tutorial 2: Guía de Instalación de Git y Configuración de GitHub",
+    "text": "Tutorial 2: Guía de Instalación de Git y Configuración de GitHub\nInstala Git y configura tu cuenta de GitHub siguiendo estos pasos: Guía de Instalación de Git y Configuración de GitHub."
+  },
+  {
+    "objectID": "tutorials/instalar_ambiente.html",
+    "href": "tutorials/instalar_ambiente.html",
+    "title": "Instructivo: Instalación de Espacio de Trabajo para Análisis de Datos",
+    "section": "",
+    "text": "Este instructivo te guiará en la instalación de un entorno de trabajo completo con Jupyter Lab, Conda y SQLite en tu sistema operativo."
+  },
+  {
+    "objectID": "tutorials/instalar_ambiente.html#windows",
+    "href": "tutorials/instalar_ambiente.html#windows",
+    "title": "Instructivo: Instalación de Espacio de Trabajo para Análisis de Datos",
+    "section": "Windows",
+    "text": "Windows\n\n1. Instalar Conda (Miniconda)\n\nDescarga Miniconda desde: https://docs.conda.io/en/latest/miniconda.html\nEjecuta el instalador descargado (.exe)\nDurante la instalación:\n\nMarca la opción “Add Miniconda3 to my PATH environment variable” (aunque aparezca como no recomendado, facilitará el uso)\nCompleta la instalación con las opciones predeterminadas\n\nAbre Anaconda Prompt desde el menú inicio\nVerifica la instalación:\nconda --version\n\n\n\n2. Crear y configurar el entorno\nEn Anaconda Prompt, ejecuta:\n# Crear entorno con Python\nconda create -n analisis python=3.11\n\n# Activar el entorno\nconda activate analisis\n\n# Instalar paquetes necesarios\nconda install -c conda-forge jupyterlab pandas scipy matplotlib numpy nltk pytest\n\n# Instalar SQLite (ya viene incluido con Python, pero verificamos)\nconda install sqlite\n\n\n3. Verificar instalación\n# Iniciar Jupyter Lab\njupyter lab\nSe abrirá tu navegador con Jupyter Lab. Para verificar los paquetes, crea un nuevo notebook y ejecuta:\nimport pandas as pd\nimport scipy\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport nltk\nimport pytest\nimport sqlite3\n\nprint(\"¡Todas las librerías funcionan correctamente!\")"
+  },
+  {
+    "objectID": "tutorials/instalar_ambiente.html#linux-ubuntudebian",
+    "href": "tutorials/instalar_ambiente.html#linux-ubuntudebian",
+    "title": "Instructivo: Instalación de Espacio de Trabajo para Análisis de Datos",
+    "section": "Linux (Ubuntu/Debian)",
+    "text": "Linux (Ubuntu/Debian)\n\n1. Instalar Conda (Miniconda)\nAbre la terminal y ejecuta:\n# Descargar Miniconda\nwget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh\n\n# Dar permisos de ejecución\nchmod +x Miniconda3-latest-Linux-x86_64.sh\n\n# Ejecutar instalador\n./Miniconda3-latest-Linux-x86_64.sh\nDurante la instalación: - Lee y acepta la licencia (presiona Enter, luego escribe “yes”) - Confirma la ubicación de instalación (presiona Enter) - Cuando pregunte “Do you wish to initialize Miniconda3”, escribe yes\nCierra y vuelve a abrir la terminal, o ejecuta:\nsource ~/.bashrc\nVerifica la instalación:\nconda --version\n\n\n2. Crear y configurar el entorno\n# Crear entorno con Python\nconda create -n analisis python=3.11\n\n# Activar el entorno\nconda activate analisis\n\n# Instalar paquetes necesarios\nconda install -c conda-forge jupyterlab pandas scipy matplotlib numpy nltk pytest\n\n# SQLite generalmente ya está instalado, pero puedes verificar\nconda install sqlite\n\n\n3. Verificar instalación\n# Iniciar Jupyter Lab\njupyter lab\nEjecuta el mismo código de verificación mostrado en la sección de Windows."
+  },
+  {
+    "objectID": "tutorials/instalar_ambiente.html#macos",
+    "href": "tutorials/instalar_ambiente.html#macos",
+    "title": "Instructivo: Instalación de Espacio de Trabajo para Análisis de Datos",
+    "section": "macOS",
+    "text": "macOS\n\n1. Instalar Homebrew (si no lo tienes)\nAbre Terminal y ejecuta:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nSigue las instrucciones que aparezcan en pantalla. Después de la instalación, es posible que necesites agregar Homebrew al PATH como te indique el instalador.\n\n\n2. Instalar Conda usando Homebrew\n# Instalar Miniconda\nbrew install --cask miniconda\n\n# Inicializar conda para tu shell\nconda init \"$(basename \"${SHELL}\")\"\nCierra y vuelve a abrir la Terminal, o ejecuta:\nsource ~/.zshrc  # o ~/.bash_profile si usas bash\nVerifica la instalación:\nconda --version\n\n\n3. Crear y configurar el entorno\n# Crear entorno con Python\nconda create -n analisis python=3.11\n\n# Activar el entorno\nconda activate analisis\n\n# Instalar paquetes necesarios\nconda install -c conda-forge jupyterlab pandas scipy matplotlib numpy nltk pytest\n\n# Instalar SQLite\nconda install sqlite\n\n\n4. Verificar instalación\n# Iniciar Jupyter Lab\njupyter lab\nEjecuta el código de verificación mencionado anteriormente."
+  },
+  {
+    "objectID": "tutorials/instalar_ambiente.html#comandos-útiles-para-todos-los-sistemas",
+    "href": "tutorials/instalar_ambiente.html#comandos-útiles-para-todos-los-sistemas",
+    "title": "Instructivo: Instalación de Espacio de Trabajo para Análisis de Datos",
+    "section": "Comandos Útiles para Todos los Sistemas",
+    "text": "Comandos Útiles para Todos los Sistemas\n\nActivar/Desactivar el entorno\n# Activar el entorno\nconda activate analisis\n\n# Desactivar el entorno\nconda deactivate\n\n\nActualizar paquetes\n# Con el entorno activado\nconda update --all\n\n\nListar paquetes instalados\nconda list\n\n\nUsar SQLite\nDesde la terminal con el entorno activado:\nsqlite3 mi_base_datos.db\nO desde Python/Jupyter:\nimport sqlite3\nconn = sqlite3.connect('mi_base_datos.db')"
+  },
+  {
+    "objectID": "tutorials/instalar_ambiente.html#solución-de-problemas-comunes",
+    "href": "tutorials/instalar_ambiente.html#solución-de-problemas-comunes",
+    "title": "Instructivo: Instalación de Espacio de Trabajo para Análisis de Datos",
+    "section": "Solución de Problemas Comunes",
+    "text": "Solución de Problemas Comunes\nProblema: “conda: command not found” - Solución: Cierra y vuelve a abrir la terminal, o reinicia tu computadora\nProblema: Jupyter Lab no se abre automáticamente - Solución: Copia la URL que aparece en la terminal (empieza con http://localhost:8888) y pégala en tu navegador\nProblema: Error al importar librerías - Solución: Verifica que el entorno esté activado (conda activate analisis)\nProblema: En macOS, error con permisos - Solución: Puede que necesites usar sudo antes de algunos comandos de Homebrew"
+  },
+  {
+    "objectID": "tutorials/instalar_ambiente.html#notas-adicionales",
+    "href": "tutorials/instalar_ambiente.html#notas-adicionales",
+    "title": "Instructivo: Instalación de Espacio de Trabajo para Análisis de Datos",
+    "section": "Notas Adicionales",
+    "text": "Notas Adicionales\n\nSiempre activa el entorno analisis antes de trabajar: conda activate analisis\nPara desinstalar todo, simplemente elimina el entorno: conda env remove -n analisis\nPuedes crear múltiples entornos para diferentes proyectos\nSQLite no requiere servidor, los archivos de base de datos son archivos .db en tu sistema\n\nSi tienes algún problema en la instalación, contacta al tutor."
+  },
+  {
+    "objectID": "tutorials/instalar_git.html",
+    "href": "tutorials/instalar_git.html",
+    "title": "Guía de Instalación de Git y Configuración con GitHub",
+    "section": "",
+    "text": "Instala git en tu sistema operativoo."
+  },
+  {
+    "objectID": "tutorials/instalar_git.html#windows",
+    "href": "tutorials/instalar_git.html#windows",
+    "title": "Guía de Instalación de Git y Configuración con GitHub",
+    "section": "Windows",
+    "text": "Windows\n\nInstalación de Git\n\nDescarga Git desde git-scm.com\nEjecuta el instalador descargado\nDurante la instalación, acepta las opciones predeterminadas (son adecuadas para la mayoría de usuarios)\nVerifica la instalación abriendo PowerShell o CMD y ejecutando:\ngit --version\n\n\n\nConfiguración de Credenciales\n\nAbre Git Bash, PowerShell o CMD y configura tu nombre y correo:\ngit config --global user.name \"Tu Nombre\"\ngit config --global user.email \"tuemail@ejemplo.com\"\nConfigura Git Credential Manager (viene incluido con Git para Windows):\ngit config --global credential.helper manager-core\nLa primera vez que intentes hacer push a GitHub, se abrirá una ventana para autenticarte con tu cuenta de GitHub."
+  },
+  {
+    "objectID": "tutorials/instalar_git.html#macos",
+    "href": "tutorials/instalar_git.html#macos",
+    "title": "Guía de Instalación de Git y Configuración con GitHub",
+    "section": "macOS",
+    "text": "macOS\n\nInstalación de Git\nOpción 1: Usando Homebrew (recomendado)\nbrew install git\nOpción 2: Usando Xcode Command Line Tools\nxcode-select --install\nOpción 3: Descarga el instalador desde git-scm.com\nVerifica la instalación:\ngit --version\n\n\nConfiguración de Credenciales\n\nConfigura tu nombre y correo:\ngit config --global user.name \"Tu Nombre\"\ngit config --global user.email \"tuemail@ejemplo.com\"\nConfigura el Credential Helper de macOS:\ngit config --global credential.helper osxkeychain\nEn el primer push a GitHub, se te pedirá autenticarte."
+  },
+  {
+    "objectID": "tutorials/instalar_git.html#linux",
+    "href": "tutorials/instalar_git.html#linux",
+    "title": "Guía de Instalación de Git y Configuración con GitHub",
+    "section": "Linux",
+    "text": "Linux\n\nInstalación de Git\nDebian/Ubuntu:\nsudo apt update\nsudo apt install git\nFedora:\nsudo dnf install git\nArch Linux:\nsudo pacman -S git\nCentOS/RHEL:\nsudo yum install git\nVerifica la instalación:\ngit --version\n\n\nConfiguración de Credenciales\n\nConfigura tu nombre y correo:\ngit config --global user.name \"Tu Nombre\"\ngit config --global user.email \"tuemail@ejemplo.com\"\nConfigura el almacenamiento de credenciales:\ngit config --global credential.helper store\nO para mayor seguridad, usa cache (expira después de 15 minutos):\ngit config --global credential.helper cache"
+  },
+  {
+    "objectID": "tutorials/instalar_git.html#autenticación-con-github-todos-los-sistemas",
+    "href": "tutorials/instalar_git.html#autenticación-con-github-todos-los-sistemas",
+    "title": "Guía de Instalación de Git y Configuración con GitHub",
+    "section": "Autenticación con GitHub (Todos los Sistemas)",
+    "text": "Autenticación con GitHub (Todos los Sistemas)\nGitHub ya no acepta contraseñas para autenticación Git. Debes usar Personal Access Tokens (PAT) o SSH.\n\nOpción 1: Personal Access Token (PAT)\n\nVe a GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)\nClick en “Generate new token (classic)”\nDale un nombre descriptivo y selecciona los permisos necesarios (mínimo: repo)\nCopia el token generado (¡no podrás verlo de nuevo!)\nCuando Git te pida contraseña, usa el PAT en lugar de tu contraseña de GitHub\n\n\n\nOpción 2: SSH (Recomendado)\n\nGenera una clave SSH:\nssh-keygen -t ed25519 -C \"tuemail@ejemplo.com\"\nPresiona Enter para aceptar la ubicación predeterminada.\nInicia el agente SSH:\n# Linux/macOS\neval \"$(ssh-agent -s)\"\nssh-add ~/.ssh/id_ed25519\n\n# Windows (Git Bash)\neval $(ssh-agent -s)\nssh-add ~/.ssh/id_ed25519\nCopia tu clave pública:\n# Linux/macOS\ncat ~/.ssh/id_ed25519.pub\n\n# Windows (PowerShell)\ntype C:\\Users\\TuUsuario\\.ssh\\id_ed25519.pub\nAgrega la clave a GitHub:\n\nVe a GitHub → Settings → SSH and GPG keys\nClick “New SSH key”\nPega tu clave pública y guarda\n\nVerifica la conexión:\nssh -T git@github.com\n\n\n\nVerificar Configuración\nPara ver tu configuración actual:\ngit config --list\n¡Listo! Ya tienes Git instalado y configurado para trabajar con GitHub."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Sobre este curso",
     "section": "",
-    "text": "About this site"
+    "text": "Este curso está diseñado para proporcionar a los estudiantes de lingüística las habilidades necesarias para utilizar herramientas digitales en el análisis y la investigación lingüística. A lo largo del curso, exploraremos diversas tecnologías y metodologías que facilitan el trabajo con datos lingüísticos."
+  },
+  {
+    "objectID": "about.html#prerrequisitos",
+    "href": "about.html#prerrequisitos",
+    "title": "Sobre este curso",
+    "section": "Prerrequisitos",
+    "text": "Prerrequisitos\nNo se requieren conocimientos previos en programación o análisis de datos. Sin embargo, se recomienda tener una familiaridad básica con el uso de computadoras y navegación por internet."
+  },
+  {
+    "objectID": "about.html#recursos-necesarios",
+    "href": "about.html#recursos-necesarios",
+    "title": "Sobre este curso",
+    "section": "Recursos necesarios",
+    "text": "Recursos necesarios\nPara aprovechar al máximo este curso, los estudiantes necesitarán acceso a una computadora con conexión a internet. Se utilizarán herramientas de software de código abierto, por lo que no se requiere la compra de licencias adicionales."
   },
   {
     "objectID": "sqlite-demo.html",
