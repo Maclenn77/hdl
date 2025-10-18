@@ -81,7 +81,7 @@
     "href": "index.html",
     "title": "Herramientas digitales para lingüística",
     "section": "",
-    "text": "¡Bienvenidos al curso de Herramientas digitales para lingüística!\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "¡Bienvenidos al curso de Herramientas digitales para lingüística!"
   },
   {
     "objectID": "tutorials/instalar_git.html",
@@ -180,5 +180,12 @@
     "title": "Sobre este curso",
     "section": "Recursos necesarios",
     "text": "Recursos necesarios\nPara aprovechar al máximo este curso, los estudiantes necesitarán acceso a una computadora con conexión a internet. Se utilizarán herramientas de software de código abierto, por lo que no se requiere la compra de licencias adicionales."
+  },
+  {
+    "objectID": "index.html#contenido-del-curso",
+    "href": "index.html#contenido-del-curso",
+    "title": "Herramientas digitales para lingüística",
+    "section": "Contenido del curso",
+    "text": "Contenido del curso\n\nIntroducción\n\nPresentación del curso y objetivos de aprendizaje\nImportancia de las herramientas digitales en lingüística\nVisión general de las tecnologías y lenguajes de programación\nConfiguración del entorno de trabajo\n\n\n\nControl de Versiones con Git y GitHub\n\nIntroducción a Git: repositorio, commit, branch\nGitHub y colaboración remota\nDocumentación de proyectos y trabajo en equipo\n\n\n\nFundamentos de Programación con Python\nSemanas 1-4 (16 horas)\n\nIntroducción al curso y pensamiento computacional\nVariables, tipos de datos y estructuras de control\nListas, tuplas, diccionarios y bucles\nFunciones, buenas prácticas y depuración de código"
   }
 ]

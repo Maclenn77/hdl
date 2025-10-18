@@ -120,21 +120,22 @@ h3 {
 }
 
 /* Units */
-.units {
+section .level2 {
     display: grid;
     gap: 30px;
     margin-top: 40px;
 }
 
-.unit {
+section .level3 {
     background: white;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     border-top: 5px solid #6B2FBF;
+    margin-bottom: 10px;
 }
 
-.unit h3 {
+section .level3 h3 {
     color: #6B2FBF;
     display: flex;
     align-items: center;

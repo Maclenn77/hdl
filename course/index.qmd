@@ -4,4 +4,26 @@ title: "Herramientas digitales para lingüística"
 
 ¡Bienvenidos al curso de Herramientas digitales para lingüística!
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## Contenido del curso
+
+### Introducción
+
+- Presentación del curso y objetivos de aprendizaje
+- Importancia de las herramientas digitales en lingüística
+- Visión general de las tecnologías y lenguajes de programación
+- Configuración del entorno de trabajo
+
+### Control de Versiones con Git y GitHub
+
+- Introducción a Git: repositorio, commit, branch
+- GitHub y colaboración remota
+- Documentación de proyectos y trabajo en equipo
+
+### Fundamentos de Programación con Python
+Semanas 1-4 (16 horas)
+
+- Introducción al curso y pensamiento computacional
+- Variables, tipos de datos y estructuras de control
+- Listas, tuplas, diccionarios y bucles
+- Funciones, buenas prácticas y depuración de código
+
