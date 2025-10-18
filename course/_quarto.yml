@@ -5,6 +5,7 @@ project:
 website:
   title: "Herramientas digitales para lingüística"
   site-url: https://hdl.juanpaulo.xyz/course
+  favicon: ../images/favicon.ico
   navbar:
     left:
       - href: index.qmd
