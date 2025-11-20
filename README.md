@@ -40,6 +40,13 @@ Este es un repositorio educativo. Para dudas, comentarios o sugerencias sobre el
 
 Los materiales de este curso están disponibles exclusivamente para fines educativos de los estudiantes inscritos en la materia.
 
+## Previsualizar sitio
+
+```bash
+    cd course
+    quarto preview
+```
+
 ---
 
 **ENAH - Escuela Nacional de Antropología e Historia**  

@@ -1,0 +1,13 @@
+---
+title: Referencias
+---
+
+## Clase 1
+
+Burdick, Anne, Johanna Drucker, Peter Lunenfeld, Todd Presner y Jeffrey Schnapp. [«A Short Guide to the Digital_Humanities»](http://jeffreyschnapp.com/wp-content/uploads/2013/01/D_H_ShortGuide.pdf
+). MIT Press (2012).
+
+
+## Bases de datos
+
+[Building your own data set](https://cmu-lib.github.io/dhlg/project-videos/brown/)

@@ -1,0 +1,72 @@
+---
+title: Presentación del Curso
+---
+
+## Bienvenida
+
+Este curso está diseñado para proporcionarte las competencias tecnológicas fundamentales que todo lingüista contemporáneo necesita en su práctica investigativa. En un mundo donde el lenguaje se produce, circula y analiza cada vez más en formatos digitales, dominar estas herramientas te permitirá explorar nuevas dimensiones del fenómeno lingüístico.
+
+---
+
+## Objetivo General
+
+**Que los estudiantes adquieran conocimientos básicos de herramientas digitales para incorporarlas en su trabajo de investigación lingüística.**
+
+A lo largo del curso, trabajaremos en la intersección entre la lingüística teórica y aplicada con las tecnologías de análisis de datos, preparándote para enfrentar los desafíos metodológicos de la investigación lingüística del siglo XXI.
+
+---
+
+## Objetivos Específicos de Aprendizaje
+
+Al finalizar el curso, serás capaz de:
+
+### 1. Fundamentos de Programación
+Aplicar conocimientos básicos de **programación en Python** siguiendo buenas prácticas de codificación que te permitirán automatizar tareas de análisis lingüístico y desarrollar scripts reproducibles.
+
+### 2. Control de Versiones
+Utilizar **sistemas de control de versiones** (Git y GitHub) para gestionar proyectos de investigación, facilitando la colaboración académica y el seguimiento sistemático de tu trabajo.
+
+---
+
+### 3. Manipulación de Datos
+Identificar y manipular diferentes **tipos de datos relevantes** para la investigación lingüística, reconociendo formatos, estructuras y las mejores estrategias para su procesamiento.
+
+### 4. Bases de Datos
+Consultar y gestionar **bases de datos** utilizando SQL básico y la librería Pandas, habilidades esenciales para trabajar con corpus lingüísticos de gran escala.
+
+---
+
+### 5. APIs y Obtención de Datos
+Obtener datos de **APIs REST**, específicamente WikiData y Mastodon, permitiéndote acceder a repositorios masivos de datos lingüísticos en tiempo real.
+
+### 6. Análisis de Corpus
+Aplicar técnicas de **distant reading y análisis de concordancias** a corpus textuales, explorando patrones lingüísticos que serían imposibles de detectar mediante lectura tradicional.
+
+---
+
+### 7. Tecnologías Emergentes
+Comprender los fundamentos de **vector embeddings** y sus aplicaciones lingüísticas, acercándote a las tecnologías que están revolucionando el procesamiento del lenguaje natural.
+
+---
+
+## ¿Qué Podrás Hacer?
+
+Al concluir este curso, habrás desarrollado un conjunto de competencias que te permitirán:
+
+- Diseñar y ejecutar proyectos de investigación basados en datos
+- Analizar corpus lingüísticos de manera sistemática y eficiente
+- Colaborar en proyectos digitales de investigación
+- Mantenerte actualizado con las metodologías digitales emergentes en lingüística
+- Reproducir y compartir tus análisis de manera transparente
+
+---
+
+## Metodología
+
+El curso combina teoría y práctica, privilegiando el aprendizaje activo mediante ejercicios aplicados, proyectos colaborativos y la exploración de casos reales de investigación lingüística.
+
+---
+
+## ¡Comencemos!
+
+Te invitamos a aprovechar al máximo esta oportunidad de ampliar tu toolkit metodológico y descubrir nuevas formas de interrogar el lenguaje en la era digital.

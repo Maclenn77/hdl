@@ -8,7 +8,7 @@ title: "Herramientas digitales para lingüística"
 
 ### Introducción
 
-- Presentación del curso y objetivos de aprendizaje
+- [Presentación del curso y objetivos de aprendizaje](clases/01_01_presentación.qmd)
 - Importancia de las herramientas digitales en lingüística
 - Visión general de las tecnologías y lenguajes de programación
 - Configuración del entorno de trabajo
