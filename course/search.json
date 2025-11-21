@@ -1,59 +1,31 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Herramientas digitales para lingüística",
+    "objectID": "sqlite-demo.html",
+    "href": "sqlite-demo.html",
+    "title": "Interactive SQLite Database",
     "section": "",
-    "text": "¡Bienvenidos al curso de Herramientas digitales para lingüística!"
+    "text": "Run SQL queries directly in your browser - no server needed!"
   },
   {
-    "objectID": "index.html#contenido-del-curso",
-    "href": "index.html#contenido-del-curso",
-    "title": "Herramientas digitales para lingüística",
-    "section": "Contenido del curso",
-    "text": "Contenido del curso\n\nIntroducción\n\nPresentación del curso y objetivos de aprendizaje\nImportancia de las herramientas digitales en lingüística\nVisión general de las tecnologías y lenguajes de programación\nConfiguración del entorno de trabajo\n\n\n\nControl de Versiones con Git y GitHub\n\nIntroducción a Git: repositorio, commit, branch\nGitHub y colaboración remota\nDocumentación de proyectos y trabajo en equipo\n\n\n\nFundamentos de Programación con Python\nSemanas 1-4 (16 horas)\n\nIntroducción al curso y pensamiento computacional\nVariables, tipos de datos y estructuras de control\nListas, tuplas, diccionarios y bucles\nFunciones, buenas prácticas y depuración de código"
-  },
-  {
-    "objectID": "demo.html",
-    "href": "demo.html",
-    "title": "Interactive Python Demo",
+    "objectID": "sqlite-demo.html#sqlite-browser",
+    "href": "sqlite-demo.html#sqlite-browser",
+    "title": "Interactive SQLite Database",
     "section": "",
-    "text": "This page demonstrates runnable Python code in your browser using Pyodide.\n\n\nTry editing and running this code:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "Run SQL queries directly in your browser - no server needed!"
   },
   {
-    "objectID": "demo.html#welcome-to-interactive-python",
-    "href": "demo.html#welcome-to-interactive-python",
-    "title": "Interactive Python Demo",
-    "section": "",
-    "text": "This page demonstrates runnable Python code in your browser using Pyodide.\n\n\nTry editing and running this code:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "objectID": "sqlite-demo.html#sample-database-schema",
+    "href": "sqlite-demo.html#sample-database-schema",
+    "title": "Interactive SQLite Database",
+    "section": "Sample Database Schema",
+    "text": "Sample Database Schema\nThis demo includes three tables:\n\nStudents Table\n\nid (INTEGER PRIMARY KEY)\nname (TEXT)\nemail (TEXT)\nmajor (TEXT)\ngpa (REAL)\n\n\n\nCourses Table\n\nid (INTEGER PRIMARY KEY)\ncourse_code (TEXT)\ncourse_name (TEXT)\ncredits (INTEGER)\n\n\n\nEnrollments Table\n\nid (INTEGER PRIMARY KEY)\nstudent_id (INTEGER)\ncourse_id (INTEGER)\ngrade (TEXT)"
   },
   {
-    "objectID": "demo.html#try-it-yourself",
-    "href": "demo.html#try-it-yourself",
-    "title": "Interactive Python Demo",
-    "section": "Try It Yourself!",
-    "text": "Try It Yourself!\nEdit any code block above and click the “Run Code” button to see the results. The Python interpreter runs entirely in your browser!\n\nAvailable Libraries\nPyodide comes with many popular Python packages: - NumPy - Pandas - Matplotlib - SciPy - Scikit-learn - And many more!\nCheck the Pyodide documentation for a complete list of available packages."
-  },
-  {
-    "objectID": "tutorials/index.html",
-    "href": "tutorials/index.html",
-    "title": "Tutoriales",
-    "section": "",
-    "text": "Bienvenido a la sección de tutoriales. Aquí encontrarás guías paso a paso para instalar y configurar herramientas esenciales para nuestro curso."
-  },
-  {
-    "objectID": "tutorials/index.html#tutorial-1-instalación-del-entorno",
-    "href": "tutorials/index.html#tutorial-1-instalación-del-entorno",
-    "title": "Tutoriales",
-    "section": "Tutorial 1: Instalación del Entorno",
-    "text": "Tutorial 1: Instalación del Entorno\nSigue las instrucciones detalladas en el Instructivo: Instalación de Espacio de Trabajo para Análisis de Datos para configurar tu entorno de trabajo con Jupyter Lab, Conda y SQLite."
-  },
-  {
-    "objectID": "tutorials/index.html#tutorial-2-guía-de-instalación-de-git-y-configuración-de-github",
-    "href": "tutorials/index.html#tutorial-2-guía-de-instalación-de-git-y-configuración-de-github",
-    "title": "Tutoriales",
-    "section": "Tutorial 2: Guía de Instalación de Git y Configuración de GitHub",
-    "text": "Tutorial 2: Guía de Instalación de Git y Configuración de GitHub\nInstala Git y configura tu cuenta de GitHub siguiendo estos pasos: Guía de Instalación de Git y Configuración de GitHub."
+    "objectID": "sqlite-demo.html#try-these-queries",
+    "href": "sqlite-demo.html#try-these-queries",
+    "title": "Interactive SQLite Database",
+    "section": "Try These Queries",
+    "text": "Try These Queries\nBasic Queries:\n-- Get all students\nSELECT * FROM students;\n\n-- Filter by major\nSELECT * FROM students WHERE major = 'Computer Science';\n\n-- Sort by GPA\nSELECT name, gpa FROM students ORDER BY gpa DESC;\nJoin Queries:\n-- Student enrollments with course names\nSELECT s.name, c.course_name, e.grade \nFROM students s \nJOIN enrollments e ON s.id = e.student_id \nJOIN courses c ON e.course_id = c.id;\n\n-- Students without enrollments\nSELECT s.name FROM students s \nLEFT JOIN enrollments e ON s.id = e.student_id \nWHERE e.id IS NULL;\nAggregations:\n-- Average GPA by major\nSELECT major, ROUND(AVG(gpa), 2) as avg_gpa, COUNT(*) as students\nFROM students \nGROUP BY major;\n\n-- Course enrollment counts\nSELECT c.course_name, COUNT(e.id) as enrolled\nFROM courses c\nLEFT JOIN enrollments e ON c.id = e.course_id\nGROUP BY c.id;\nData Modifications:\n-- Insert new student\nINSERT INTO students (name, email, major, gpa) \nVALUES ('New Student', 'new@university.edu', 'Engineering', 3.5);\n\n-- Update a grade\nUPDATE enrollments SET grade = 'A+' WHERE id = 1;\n\n-- Delete a record\nDELETE FROM enrollments WHERE id = 8;\nAll changes are stored locally in your browser session!"
   },
   {
     "objectID": "tutorials/instalar_ambiente.html",
@@ -105,6 +77,181 @@
     "text": "Notas Adicionales\n\nSiempre activa el entorno analisis antes de trabajar: conda activate analisis\nPara desinstalar todo, simplemente elimina el entorno: conda env remove -n analisis\nPuedes crear múltiples entornos para diferentes proyectos\nSQLite no requiere servidor, los archivos de base de datos son archivos .db en tu sistema\n\nSi tienes algún problema en la instalación, contacta al tutor."
   },
   {
+    "objectID": "tutorials/index.html",
+    "href": "tutorials/index.html",
+    "title": "Tutoriales",
+    "section": "",
+    "text": "Bienvenido a la sección de tutoriales. Aquí encontrarás guías paso a paso para instalar y configurar herramientas esenciales para nuestro curso."
+  },
+  {
+    "objectID": "tutorials/index.html#tutorial-1-instalación-del-entorno",
+    "href": "tutorials/index.html#tutorial-1-instalación-del-entorno",
+    "title": "Tutoriales",
+    "section": "Tutorial 1: Instalación del Entorno",
+    "text": "Tutorial 1: Instalación del Entorno\nSigue las instrucciones detalladas en el Instructivo: Instalación de Espacio de Trabajo para Análisis de Datos para configurar tu entorno de trabajo con Jupyter Lab, Conda y SQLite."
+  },
+  {
+    "objectID": "tutorials/index.html#tutorial-2-guía-de-instalación-de-git-y-configuración-de-github",
+    "href": "tutorials/index.html#tutorial-2-guía-de-instalación-de-git-y-configuración-de-github",
+    "title": "Tutoriales",
+    "section": "Tutorial 2: Guía de Instalación de Git y Configuración de GitHub",
+    "text": "Tutorial 2: Guía de Instalación de Git y Configuración de GitHub\nInstala Git y configura tu cuenta de GitHub siguiendo estos pasos: Guía de Instalación de Git y Configuración de GitHub."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Sobre este curso",
+    "section": "",
+    "text": "Este curso está diseñado para proporcionar a los estudiantes de lingüística las habilidades necesarias para utilizar herramientas digitales en el análisis y la investigación lingüística. A lo largo del curso, exploraremos diversas tecnologías y metodologías que facilitan el trabajo con datos lingüísticos."
+  },
+  {
+    "objectID": "about.html#prerrequisitos",
+    "href": "about.html#prerrequisitos",
+    "title": "Sobre este curso",
+    "section": "Prerrequisitos",
+    "text": "Prerrequisitos\nNo se requieren conocimientos previos en programación o análisis de datos. Sin embargo, se recomienda tener una familiaridad básica con el uso de computadoras y navegación por internet."
+  },
+  {
+    "objectID": "about.html#recursos-necesarios",
+    "href": "about.html#recursos-necesarios",
+    "title": "Sobre este curso",
+    "section": "Recursos necesarios",
+    "text": "Recursos necesarios\nPara aprovechar al máximo este curso, los estudiantes necesitarán acceso a una computadora con conexión a internet. Se utilizarán herramientas de software de código abierto, por lo que no se requiere la compra de licencias adicionales."
+  },
+  {
+    "objectID": "clases/01_03_proyectos.html",
+    "href": "clases/01_03_proyectos.html",
+    "title": "",
+    "section": "",
+    "text": "Código"
+  },
+  {
+    "objectID": "clases/01_03_proyectos.html#humanidades-digtiales",
+    "href": "clases/01_03_proyectos.html#humanidades-digtiales",
+    "title": "",
+    "section": "Humanidades digtiales",
+    "text": "Humanidades digtiales\nRepublic of Letters"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Herramientas digitales para lingüística",
+    "section": "",
+    "text": "¡Bienvenidos al curso de Herramientas digitales para lingüística!"
+  },
+  {
+    "objectID": "index.html#contenido-del-curso",
+    "href": "index.html#contenido-del-curso",
+    "title": "Herramientas digitales para lingüística",
+    "section": "Contenido del curso",
+    "text": "Contenido del curso\n\nIntroducción\n\nPresentación del curso y objetivos de aprendizaje\nImportancia de las herramientas digitales en lingüística\nVisión general de las tecnologías y lenguajes de programación\nConfiguración del entorno de trabajo\n\n\n\nControl de Versiones con Git y GitHub\n\nIntroducción a Git: repositorio, commit, branch\nGitHub y colaboración remota\nDocumentación de proyectos y trabajo en equipo\n\n\n\nFundamentos de Programación con Python\nSemanas 1-4 (16 horas)\n\nIntroducción al curso y pensamiento computacional\nVariables, tipos de datos y estructuras de control\nListas, tuplas, diccionarios y bucles\nFunciones, buenas prácticas y depuración de código"
+  },
+  {
+    "objectID": "clases/01_01_presentación.html",
+    "href": "clases/01_01_presentación.html",
+    "title": "Presentación del Curso",
+    "section": "",
+    "text": "Este curso está diseñado para proporcionarte las competencias tecnológicas fundamentales que todo lingüista contemporáneo necesita en su práctica investigativa. En un mundo donde el lenguaje se produce, circula y analiza cada vez más en formatos digitales, dominar estas herramientas te permitirá explorar nuevas dimensiones del fenómeno lingüístico."
+  },
+  {
+    "objectID": "clases/01_01_presentación.html#bienvenida",
+    "href": "clases/01_01_presentación.html#bienvenida",
+    "title": "Presentación del Curso",
+    "section": "",
+    "text": "Este curso está diseñado para proporcionarte las competencias tecnológicas fundamentales que todo lingüista contemporáneo necesita en su práctica investigativa. En un mundo donde el lenguaje se produce, circula y analiza cada vez más en formatos digitales, dominar estas herramientas te permitirá explorar nuevas dimensiones del fenómeno lingüístico."
+  },
+  {
+    "objectID": "clases/01_01_presentación.html#objetivo-general",
+    "href": "clases/01_01_presentación.html#objetivo-general",
+    "title": "Presentación del Curso",
+    "section": "Objetivo General",
+    "text": "Objetivo General\nQue los estudiantes adquieran conocimientos básicos de herramientas digitales para incorporarlas en su trabajo de investigación lingüística.\nA lo largo del curso, trabajaremos en la intersección entre la lingüística teórica y aplicada con las tecnologías de análisis de datos, preparándote para enfrentar los desafíos metodológicos de la investigación lingüística del siglo XXI."
+  },
+  {
+    "objectID": "clases/01_01_presentación.html#objetivos-específicos-de-aprendizaje",
+    "href": "clases/01_01_presentación.html#objetivos-específicos-de-aprendizaje",
+    "title": "Presentación del Curso",
+    "section": "Objetivos Específicos de Aprendizaje",
+    "text": "Objetivos Específicos de Aprendizaje\nAl finalizar el curso, serás capaz de:\n\n1. Fundamentos de Programación\nAplicar conocimientos básicos de programación en Python siguiendo buenas prácticas de codificación que te permitirán automatizar tareas de análisis lingüístico y desarrollar scripts reproducibles.\n\n\n2. Control de Versiones\nUtilizar sistemas de control de versiones (Git y GitHub) para gestionar proyectos de investigación, facilitando la colaboración académica y el seguimiento sistemático de tu trabajo.\n\n\n\n3. Manipulación de Datos\nIdentificar y manipular diferentes tipos de datos relevantes para la investigación lingüística, reconociendo formatos, estructuras y las mejores estrategias para su procesamiento.\n\n\n4. Bases de Datos\nConsultar y gestionar bases de datos utilizando SQL básico y la librería Pandas, habilidades esenciales para trabajar con corpus lingüísticos de gran escala.\n\n\n\n5. APIs y Obtención de Datos\nObtener datos de APIs REST, específicamente WikiData y Mastodon, permitiéndote acceder a repositorios masivos de datos lingüísticos en tiempo real.\n\n\n6. Análisis de Corpus\nAplicar técnicas de distant reading y análisis de concordancias a corpus textuales, explorando patrones lingüísticos que serían imposibles de detectar mediante lectura tradicional.\n\n\n\n7. Tecnologías Emergentes\nComprender los fundamentos de vector embeddings y sus aplicaciones lingüísticas, acercándote a las tecnologías que están revolucionando el procesamiento del lenguaje natural."
+  },
+  {
+    "objectID": "clases/01_01_presentación.html#qué-podrás-hacer",
+    "href": "clases/01_01_presentación.html#qué-podrás-hacer",
+    "title": "Presentación del Curso",
+    "section": "¿Qué Podrás Hacer?",
+    "text": "¿Qué Podrás Hacer?\nAl concluir este curso, habrás desarrollado un conjunto de competencias que te permitirán:\n\nDiseñar y ejecutar proyectos de investigación basados en datos\nAnalizar corpus lingüísticos de manera sistemática y eficiente\nColaborar en proyectos digitales de investigación\nMantenerte actualizado con las metodologías digitales emergentes en lingüística\nReproducir y compartir tus análisis de manera transparente"
+  },
+  {
+    "objectID": "clases/01_01_presentación.html#metodología",
+    "href": "clases/01_01_presentación.html#metodología",
+    "title": "Presentación del Curso",
+    "section": "Metodología",
+    "text": "Metodología\nEl curso combina teoría y práctica, privilegiando el aprendizaje activo mediante ejercicios aplicados, proyectos colaborativos y la exploración de casos reales de investigación lingüística."
+  },
+  {
+    "objectID": "clases/01_01_presentación.html#comencemos",
+    "href": "clases/01_01_presentación.html#comencemos",
+    "title": "Presentación del Curso",
+    "section": "¡Comencemos!",
+    "text": "¡Comencemos!\nTe invitamos a aprovechar al máximo esta oportunidad de ampliar tu toolkit metodológico y descubrir nuevas formas de interrogar el lenguaje en la era digital."
+  },
+  {
+    "objectID": "clases/01_00_intro.html",
+    "href": "clases/01_00_intro.html",
+    "title": "",
+    "section": "",
+    "text": "Código"
+  },
+  {
+    "objectID": "clases/01_00_intro.html#intersecciones-fundacionales",
+    "href": "clases/01_00_intro.html#intersecciones-fundacionales",
+    "title": "",
+    "section": "Intersecciones fundacionales",
+    "text": "Intersecciones fundacionales\nDesde entonces, la intersección entre lingüística y ciencias de la computación ha producido desarrollos fascinantes que han redefinido ambos campos. En 1966, Joseph Weizenbaum creó ELIZA, un programa conversacional que simulaba a un psicoterapeuta rogeriano y que planteó preguntas fundamentales sobre el procesamiento del lenguaje natural y la interacción humano-máquina. ELIZA no solo fue un hito técnico, sino también filosófico: reveló cómo los humanos tendemos a atribuir comprensión genuina a sistemas que simplemente manipulan patrones lingüísticos.\nOtro precedente menos conocido pero igualmente significativo es el trabajo literario-computacional de J.M. Coetzee durante su período en IBM a finales de los años sesenta. Coetzee, quien más tarde ganaría el Premio Nobel de Literatura, experimentó con la generación automática de poemas mediante algoritmos, explorando las posibilidades creativas y los límites de la computación en el ámbito del lenguaje literario. Estos experimentos tempranos anticiparon debates contemporáneos sobre creatividad, autoría y la naturaleza del lenguaje.\nPodríamos añadir también los trabajos de Noam Chomsky sobre gramáticas formales y jerarquías lingüísticas, que, aunque no desarrollados específicamente para computadoras, proporcionaron el marco teórico fundamental para el desarrollo de lenguajes de programación y sistemas de análisis sintáctico automático. Del mismo modo, los primeros sistemas de traducción automática de los años cincuenta, aunque limitados, inauguraron una línea de investigación que continúa siendo central en el procesamiento del lenguaje natural.\nA continuación, un breve extracto de una conversación con ELIZA para ilustrar su funcionamiento:\nUser: I need some help, that much seems certain.\nELIZA: WHAT WOULD IT MEAN TO YOU IF YOU GOT SOME HELP\nUser: Perhaps I could learn to get along with my mother.\nELIZA: TELL ME MORE ABOUT YOUR FAMILY\nUser: My mother takes care of me.\nELIZA: WHO ELSE IN YOU FAMILY TAKES CARE OF YOU\nUser: My father.\nELIZA: YOUR FATHER\nUser: You are like my father in some ways"
+  },
+  {
+    "objectID": "clases/01_00_intro.html#líneas-de-investigación-contemporáneas",
+    "href": "clases/01_00_intro.html#líneas-de-investigación-contemporáneas",
+    "title": "",
+    "section": "Líneas de investigación contemporáneas",
+    "text": "Líneas de investigación contemporáneas\nHoy en día, las herramientas digitales permiten múltiples aproximaciones al estudio del lenguaje. La lingüística de corpus se ha consolidado como metodología central, permitiendo el análisis de millones de palabras para identificar patrones de uso, variación y cambio lingüístico que serían imposibles de detectar mediante introspección o análisis manual. Proyectos como el Corpus del Español o el British National Corpus han democratizado el acceso a datos lingüísticos reales y variados.\nLos métodos estadísticos y computacionales han revolucionado campos como la sociolingüística, donde técnicas de análisis multivariable permiten modelar la variación lingüística considerando simultáneamente múltiples factores sociales y lingüísticos. En fonética, el análisis acústico mediante software especializado ha refinado enormemente nuestra comprensión de la producción y percepción del habla.\nLa semántica computacional ha desarrollado modelos cada vez más sofisticados de significado léxico, desde bases de datos estructuradas como WordNet hasta los modernos modelos de distribución vectorial que representan palabras como puntos en espacios matemáticos multidimensionales. Las simulaciones computacionales, por su parte, permiten modelar procesos de cambio lingüístico, adquisición del lenguaje o evolución de sistemas comunicativos, ofreciendo insights difíciles de obtener por otros medios."
+  },
+  {
+    "objectID": "clases/01_00_intro.html#herramientas-al-servicio-de-las-preguntas",
+    "href": "clases/01_00_intro.html#herramientas-al-servicio-de-las-preguntas",
+    "title": "",
+    "section": "Herramientas al servicio de las preguntas",
+    "text": "Herramientas al servicio de las preguntas\nSin embargo, es fundamental mantener una perspectiva crítica y equilibrada. Las herramientas digitales son precisamente eso: herramientas. Su valor no radica en su sofisticación técnica, sino en su capacidad para ayudarnos a responder preguntas lingüísticas significativas. Un análisis estadístico complejo sin una pregunta de investigación clara carece de sentido; del mismo modo, el acceso a corpus masivos no reemplaza la necesidad de reflexión teórica y rigor metodológico.\nConocer las herramientas digitales disponibles, entender sus posibilidades y limitaciones, y saber cuándo y cómo aplicarlas son competencias esenciales para el lingüista contemporáneo. Pero estas competencias deben estar siempre al servicio de la curiosidad intelectual, del pensamiento crítico y de preguntas de investigación bien formuladas. Las tecnologías cambian rápidamente, pero las buenas preguntas y el rigor metodológico permanecen como el corazón de cualquier investigación científica.\nEste curso busca equiparles con el conocimiento práctico de diversas herramientas digitales, pero sobre todo, desarrollar en ustedes la capacidad de evaluar críticamente cuándo, cómo y por qué utilizarlas en función de sus propios objetivos de investigación.\n«La educación debe formar, retomando una fórmula convertida en banal, no un técnico, sino simplemente un hombre, sin más especificación. De ahí el nombre de “humanidades”, que se relaciona todavía con lo que se llama también educación liberal. Esta denominación se remonta al mundo antiguo. El género humano estaba dividido en hombres libres y esclavos. Los oficios productivos eran para los esclavos, que recibían el nombre poco halagador de “serviles”. Eran necesarios para satisfacer las necesidades elementales: alimentarse, vestirse, alojarse, necesidades que no diferencian esencialmente al animal del ser humano. Por el contrario, los hombres libres no tenían que trabajar [en oficios serviles]. Se ocupaban de gobernar la ciudad y de defenderla con las armas si fuera necesario. Podían, consecuentemente, consagrarse a actividades que elegían según su interés. Estas actividades dignas de los hombres libres se denominaban por esta razón “liberales”. Los hombres libres eran, de esta manera, los únicos hombres en el verdadero sentido del término. Los estudios liberales podían por tanto denominarse igualmente “inquietud por la humanidad” (studium humanitatis), o simplemente humanidades» (Brague 2016, 273)."
+  },
+  {
+    "objectID": "clases/01_00_intro.html#objetivos-del-curso",
+    "href": "clases/01_00_intro.html#objetivos-del-curso",
+    "title": "",
+    "section": "Objetivos del curso",
+    "text": "Objetivos del curso\nEsto trajo consigo el debate de si las humanidades digitales podían ser consideradas realmente una nueva disciplina. Terras recoge la opinión de un académico que decía: «Hey, you write with a ballpoint pen, and I write with a ballpoint pen… Let’s make us the Blue Pen Club! It is what we write with the pen that is important, not the technology» (Terras 2013, 74). Sin embargo, en la actualidad parece cada vez más claro que los métodos, los resultados y las interpretaciones de las humanidades digitales difieren cada vez más de las humanidades tradicionales. El objeto de estudio sigue siendo el mismo, pero se mira desde otras perspectivas, se relaciona de manera distinta. Además, se está demandando una nueva crítica para todos aquellos fenómenos que se definen más por el proceso que por el objeto resultante.\nEsta división en las humanidades es debida a que se enfrentan a retos y problemas diferentes. Las humanidades digitales se plantean cuestiones que sería imposible abarcar con los métodos tradicionales. Los resultados que se obtienes son también peculiares. Y las interpretaciones tendrán que ser acordes a estas innovaciones. El lenguaje del que se sirven las humanidades digitales es el propio de la tecnología informática: el mundo es representado por una serie numérica que puede ser modificada por algoritmos. Esto nos lleva a una nueva forma de entender la cultura (episteme) que genera nuevos conocimientos y técnicas para el control de la memoria (techne) (Berry 2012, 2). Este nuevo lenguaje posibilita nuevas formas de colaboración entre los investigadores que a su vez genera la conexión de millones de datos que hasta ahora permanecían aislados. ## Referencias\nBrague, Rémi. 2016. La sabiduría de las edades: Historia de las humanidades. Madrid: Ediciones Encuentro."
+  },
+  {
+    "objectID": "demo.html",
+    "href": "demo.html",
+    "title": "Interactive Python Demo",
+    "section": "",
+    "text": "This page demonstrates runnable Python code in your browser using Pyodide.\n\n\nTry editing and running this code:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "demo.html#welcome-to-interactive-python",
+    "href": "demo.html#welcome-to-interactive-python",
+    "title": "Interactive Python Demo",
+    "section": "",
+    "text": "This page demonstrates runnable Python code in your browser using Pyodide.\n\n\nTry editing and running this code:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "demo.html#try-it-yourself",
+    "href": "demo.html#try-it-yourself",
+    "title": "Interactive Python Demo",
+    "section": "Try It Yourself!",
+    "text": "Try It Yourself!\nEdit any code block above and click the “Run Code” button to see the results. The Python interpreter runs entirely in your browser!\n\nAvailable Libraries\nPyodide comes with many popular Python packages: - NumPy - Pandas - Matplotlib - SciPy - Scikit-learn - And many more!\nCheck the Pyodide documentation for a complete list of available packages."
+  },
+  {
     "objectID": "tutorials/instalar_git.html",
     "href": "tutorials/instalar_git.html",
     "title": "Guía de Instalación de Git y Configuración con GitHub",
@@ -140,52 +287,24 @@
     "text": "Autenticación con GitHub (Todos los Sistemas)\nGitHub ya no acepta contraseñas para autenticación Git. Debes usar Personal Access Tokens (PAT) o SSH.\n\nOpción 1: Personal Access Token (PAT)\n\nVe a GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)\nClick en “Generate new token (classic)”\nDale un nombre descriptivo y selecciona los permisos necesarios (mínimo: repo)\nCopia el token generado (¡no podrás verlo de nuevo!)\nCuando Git te pida contraseña, usa el PAT en lugar de tu contraseña de GitHub\n\n\n\nOpción 2: SSH (Recomendado)\n\nGenera una clave SSH:\nssh-keygen -t ed25519 -C \"tuemail@ejemplo.com\"\nPresiona Enter para aceptar la ubicación predeterminada.\nInicia el agente SSH:\n# Linux/macOS\neval \"$(ssh-agent -s)\"\nssh-add ~/.ssh/id_ed25519\n\n# Windows (Git Bash)\neval $(ssh-agent -s)\nssh-add ~/.ssh/id_ed25519\nCopia tu clave pública:\n# Linux/macOS\ncat ~/.ssh/id_ed25519.pub\n\n# Windows (PowerShell)\ntype C:\\Users\\TuUsuario\\.ssh\\id_ed25519.pub\nAgrega la clave a GitHub:\n\nVe a GitHub → Settings → SSH and GPG keys\nClick “New SSH key”\nPega tu clave pública y guarda\n\nVerifica la conexión:\nssh -T git@github.com\n\n\n\nVerificar Configuración\nPara ver tu configuración actual:\ngit config --list\n¡Listo! Ya tienes Git instalado y configurado para trabajar con GitHub."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Sobre este curso",
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Referencias",
     "section": "",
-    "text": "Este curso está diseñado para proporcionar a los estudiantes de lingüística las habilidades necesarias para utilizar herramientas digitales en el análisis y la investigación lingüística. A lo largo del curso, exploraremos diversas tecnologías y metodologías que facilitan el trabajo con datos lingüísticos."
+    "text": "Burdick, Anne, Johanna Drucker, Peter Lunenfeld, Todd Presner y Jeffrey Schnapp. «A Short Guide to the Digital_Humanities». MIT Press (2012)."
   },
   {
-    "objectID": "about.html#prerrequisitos",
-    "href": "about.html#prerrequisitos",
-    "title": "Sobre este curso",
-    "section": "Prerrequisitos",
-    "text": "Prerrequisitos\nNo se requieren conocimientos previos en programación o análisis de datos. Sin embargo, se recomienda tener una familiaridad básica con el uso de computadoras y navegación por internet."
-  },
-  {
-    "objectID": "about.html#recursos-necesarios",
-    "href": "about.html#recursos-necesarios",
-    "title": "Sobre este curso",
-    "section": "Recursos necesarios",
-    "text": "Recursos necesarios\nPara aprovechar al máximo este curso, los estudiantes necesitarán acceso a una computadora con conexión a internet. Se utilizarán herramientas de software de código abierto, por lo que no se requiere la compra de licencias adicionales."
-  },
-  {
-    "objectID": "sqlite-demo.html",
-    "href": "sqlite-demo.html",
-    "title": "Interactive SQLite Database",
+    "objectID": "references.html#clase-1",
+    "href": "references.html#clase-1",
+    "title": "Referencias",
     "section": "",
-    "text": "Run SQL queries directly in your browser - no server needed!"
+    "text": "Burdick, Anne, Johanna Drucker, Peter Lunenfeld, Todd Presner y Jeffrey Schnapp. «A Short Guide to the Digital_Humanities». MIT Press (2012)."
   },
   {
-    "objectID": "sqlite-demo.html#sqlite-browser",
-    "href": "sqlite-demo.html#sqlite-browser",
-    "title": "Interactive SQLite Database",
-    "section": "",
-    "text": "Run SQL queries directly in your browser - no server needed!"
-  },
-  {
-    "objectID": "sqlite-demo.html#sample-database-schema",
-    "href": "sqlite-demo.html#sample-database-schema",
-    "title": "Interactive SQLite Database",
-    "section": "Sample Database Schema",
-    "text": "Sample Database Schema\nThis demo includes three tables:\n\nStudents Table\n\nid (INTEGER PRIMARY KEY)\nname (TEXT)\nemail (TEXT)\nmajor (TEXT)\ngpa (REAL)\n\n\n\nCourses Table\n\nid (INTEGER PRIMARY KEY)\ncourse_code (TEXT)\ncourse_name (TEXT)\ncredits (INTEGER)\n\n\n\nEnrollments Table\n\nid (INTEGER PRIMARY KEY)\nstudent_id (INTEGER)\ncourse_id (INTEGER)\ngrade (TEXT)"
-  },
-  {
-    "objectID": "sqlite-demo.html#try-these-queries",
-    "href": "sqlite-demo.html#try-these-queries",
-    "title": "Interactive SQLite Database",
-    "section": "Try These Queries",
-    "text": "Try These Queries\nBasic Queries:\n-- Get all students\nSELECT * FROM students;\n\n-- Filter by major\nSELECT * FROM students WHERE major = 'Computer Science';\n\n-- Sort by GPA\nSELECT name, gpa FROM students ORDER BY gpa DESC;\nJoin Queries:\n-- Student enrollments with course names\nSELECT s.name, c.course_name, e.grade \nFROM students s \nJOIN enrollments e ON s.id = e.student_id \nJOIN courses c ON e.course_id = c.id;\n\n-- Students without enrollments\nSELECT s.name FROM students s \nLEFT JOIN enrollments e ON s.id = e.student_id \nWHERE e.id IS NULL;\nAggregations:\n-- Average GPA by major\nSELECT major, ROUND(AVG(gpa), 2) as avg_gpa, COUNT(*) as students\nFROM students \nGROUP BY major;\n\n-- Course enrollment counts\nSELECT c.course_name, COUNT(e.id) as enrolled\nFROM courses c\nLEFT JOIN enrollments e ON c.id = e.course_id\nGROUP BY c.id;\nData Modifications:\n-- Insert new student\nINSERT INTO students (name, email, major, gpa) \nVALUES ('New Student', 'new@university.edu', 'Engineering', 3.5);\n\n-- Update a grade\nUPDATE enrollments SET grade = 'A+' WHERE id = 1;\n\n-- Delete a record\nDELETE FROM enrollments WHERE id = 8;\nAll changes are stored locally in your browser session!"
+    "objectID": "references.html#bases-de-datos",
+    "href": "references.html#bases-de-datos",
+    "title": "Referencias",
+    "section": "Bases de datos",
+    "text": "Bases de datos\nBuilding your own data set"
   }
 ]

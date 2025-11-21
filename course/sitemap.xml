@@ -1,31 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hdl.juanpaulo.xyz/course/index.html</loc>
-    <lastmod>2025-10-18T03:09:14.219Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hdl.juanpaulo.xyz/course/demo.html</loc>
-    <lastmod>2025-10-18T03:09:14.219Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hdl.juanpaulo.xyz/course/tutorials/index.html</loc>
-    <lastmod>2025-10-18T03:09:14.220Z</lastmod>
+    <loc>https://hdl.juanpaulo.xyz/course/sqlite-demo.html</loc>
+    <lastmod>2025-11-21T02:48:47.149Z</lastmod>
   </url>
   <url>
     <loc>https://hdl.juanpaulo.xyz/course/tutorials/instalar_ambiente.html</loc>
-    <lastmod>2025-10-18T03:09:14.220Z</lastmod>
+    <lastmod>2025-11-21T02:48:47.149Z</lastmod>
   </url>
   <url>
-    <loc>https://hdl.juanpaulo.xyz/course/tutorials/instalar_git.html</loc>
-    <lastmod>2025-10-18T03:09:14.220Z</lastmod>
+    <loc>https://hdl.juanpaulo.xyz/course/tutorials/index.html</loc>
+    <lastmod>2025-11-21T02:48:47.149Z</lastmod>
   </url>
   <url>
     <loc>https://hdl.juanpaulo.xyz/course/about.html</loc>
-    <lastmod>2025-10-18T03:09:14.219Z</lastmod>
+    <lastmod>2025-11-21T02:48:47.148Z</lastmod>
   </url>
   <url>
-    <loc>https://hdl.juanpaulo.xyz/course/sqlite-demo.html</loc>
-    <lastmod>2025-10-18T03:09:14.219Z</lastmod>
+    <loc>https://hdl.juanpaulo.xyz/course/clases/01_03_proyectos.html</loc>
+    <lastmod>2025-11-21T02:48:47.149Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hdl.juanpaulo.xyz/course/index.html</loc>
+    <lastmod>2025-11-21T02:48:47.149Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hdl.juanpaulo.xyz/course/clases/01_01_presentación.html</loc>
+    <lastmod>2025-11-21T02:48:47.149Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hdl.juanpaulo.xyz/course/clases/01_00_intro.html</loc>
+    <lastmod>2025-11-21T02:48:47.149Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hdl.juanpaulo.xyz/course/demo.html</loc>
+    <lastmod>2025-11-21T02:48:47.149Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hdl.juanpaulo.xyz/course/tutorials/instalar_git.html</loc>
+    <lastmod>2025-11-21T02:48:47.149Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hdl.juanpaulo.xyz/course/references.html</loc>
+    <lastmod>2025-11-21T02:48:47.149Z</lastmod>
   </url>
 </urlset>
