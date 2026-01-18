@@ -38,7 +38,8 @@ Este es un repositorio educativo. Para dudas, comentarios o sugerencias sobre el
 
 ## Licencia
 
-Los materiales de este curso están disponibles exclusivamente para fines educativos de los estudiantes inscritos en la materia.
+Los materiales de este curso están disponibles bajo la licencia [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](http://creativecommons.org/licenses/by-nc/4.0/).
+
 
 ## Previsualizar sitio
 
