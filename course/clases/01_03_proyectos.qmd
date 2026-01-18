@@ -1,3 +1,8 @@
 
 ## Humanidades digtiales
-[Republic of Letters](http://republicofletters.stanford.edu/)
+
+### Proyectos destacados
+
+- [Republic of Letters](http://republicofletters.stanford.edu/) es un proyecto de Stanford que busca mapear las redes epistolares de los intelectuales europeos y americanos entre los siglos XVII y XIX. Utilizando técnicas de análisis de redes sociales, el proyecto visualiza cómo las ideas y conocimientos se difundieron a través de las cartas intercambiadas entre figuras prominentes de la época.
+- [Blake Archive](https://blakearchive.org/) es una plataforma digital dedicada a la obra del poeta y artista William Blake. El proyecto ofrece acceso a manuscritos, impresiones y grabados de Blake, junto con herramientas para el análisis textual y visual, permitiendo a los investigadores explorar la intersección entre texto e imagen en su trabajo.
+- [Digitales Sammlungen](https://www.digitale-sammlungen.de/en/) es una iniciativa alemana que digitaliza y pone a disposición del público una vasta colección de libros, manuscritos, mapas y otros materiales culturales. El proyecto utiliza tecnologías avanzadas de digitalización y metadatos para facilitar la búsqueda y el acceso a estos recursos históricos.

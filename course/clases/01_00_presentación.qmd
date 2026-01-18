@@ -45,7 +45,7 @@ Aplicar técnicas de **distant reading y análisis de concordancias** a corpus t
 ---
 
 ### 7. Tecnologías Emergentes
-Comprender los fundamentos de **vector embeddings** y sus aplicaciones lingüísticas, acercándote a las tecnologías que están revolucionando el procesamiento del lenguaje natural.
+Comprender los fundamentos de **vector embeddings** y sus aplicaciones lingüísticas, acercándote a nuevas tecnologías en el procesamiento del lenguaje natural.
 
 ---
 
@@ -59,6 +59,19 @@ Al concluir este curso, habrás desarrollado un conjunto de competencias que te 
 - Mantenerte actualizado con las metodologías digitales emergentes en lingüística
 - Reproducir y compartir tus análisis de manera transparente
 
+### ¿Qué no vamos a ver en este curso?
+
+Este *no es* un curso de:
+
+- Lingüística Computacional
+- Humanidades Digitales
+- Análisis de corpus
+- Programas para análisis estadístico
+- Procesamiento del lenguage natural
+
+Sin embargo, ofrece el conocimiento técnico requerido para adentrarse con menos fricciones en esos campos.
+
+
 ---
 
 ## Metodología
@@ -69,4 +82,6 @@ El curso combina teoría y práctica, privilegiando el aprendizaje activo median
 
 ## ¡Comencemos!
 
-Te invitamos a aprovechar al máximo esta oportunidad de ampliar tu toolkit metodológico y descubrir nuevas formas de interrogar el lenguaje en la era digital.
+Aprovecha al máximo esta oportunidad de ampliar tus herramientas metodológicas.
+
+[Siguiente tema](01_01_intro.html)

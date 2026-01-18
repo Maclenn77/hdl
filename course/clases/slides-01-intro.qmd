@@ -1,0 +1,366 @@
+---
+title: "Computación y Lingüística"
+subtitle: "Herramientas digitales para la investigación"
+author: "J. P. Pérez-Tejada"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+    logo: ""
+lang: es
+---
+
+## ¿Cómo las herramientas digitales ayudan a la investigación lingüística?
+
+Las preguntas fundamentales sobre el lenguaje son antiguas.
+
+No han cambiado las preguntas, sino las **herramientas** para responderlas.
+
+---
+
+## Cuatro ejes
+
+:::: {.columns}
+::: {.column width="50%"}
+
+**Objetivos de investigación**
+
+- Analizar textos
+- Modelar el lenguaje
+- Simular el habla
+- Procesar lenguaje
+
+:::
+
+::: {.column width="50%"}
+**Líneas de investigación**
+
+- Humanidades digitales
+- Lingüística computacional
+- Síntesis de voz / GenAI
+- PLN (NLP)
+
+:::
+::::
+---
+
+# Analizar Textos
+La concordancia manual
+
+---
+
+## Hugo de de Sancto Charo (1230)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/archive/8/84/20240805172430%21Tommaso_da_modena%2C_ritratti_di_domenicani_%28Ugo_di_Provenza%29_1352_150cm%2C_treviso%2C_ex_convento_di_san_niccol%C3%B2%2C_sala_del_capitolo.jpg/120px-Tommaso_da_modena%2C_ritratti_di_domenicani_%28Ugo_di_Provenza%29_1352_150cm%2C_treviso%2C_ex_convento_di_san_niccol%C3%B2%2C_sala_del_capitolo.jpg){width="50"}
+
+- [Primera concordancia de la Biblia Vulgata](https://gallica.bnf.fr/ark:/12148/btv1b10029582g/f9.item)
+- **500 monjes** trabajaron en su elaboración
+- Décadas de trabajo continuo
+
+::: {.footer}
+Rouse, M., & Rouse, R. (1991). The development of research tools in the thirteenth century. En Authentic witnesses: Approaches to medieval texts and manuscripts (pp. 221-225). (Citado en Norman, J., s.f., The emergence in Paris of concordances and subject indexes, History of Information, https://historyofinformation.com/detail.php?id=1950)
+Hugo de Sancto Charo. (ca. 1250). Concordantiae Sacrorum Bibliorum [Manuscrito, folio 9]. Bibliothèque nationale de France, MS Latin 14232. Gallica. https://gallica.bnf.fr/ark:/12148/btv1b10029582g/f9.item
+:::
+
+---
+
+## Alexander Cruden (1737)
+
+:::: {.columns}
+::: {.column width="60%"}
+*A Complete Concordance to the Holy Scriptures*
+
+- Trabajó solo
+- 7am a 1pm cada día
+- Menos de 1 año para el trabajo principal
+- 1,340 páginas indexando cada palabra significativa
+
+:::
+
+::: {.column width="40%"}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Alexander_Cruden.jpg/220px-Alexander_Cruden.jpg){width="200"}
+:::
+::::
+::: {.footer}
+Cruden's Concordance. (2024, 8 de octubre). En Wikipedia. https://en.wikipedia.org/wiki/Cruden%27s_Concordance
+:::
+
+---
+
+## Rabino Mordecai Nathan (1448)
+
+- Concordancia del Tanaj (Biblia hebrea)
+- **10 años** de trabajo
+- *Meʾir Netiv* ("Sendero de Luz")
+
+::: {.footer}
+Nathan, Mordecai. (s.f.). En _Encyclopedia Judaica_. Academic Dictionaries and Encyclopedias. https://judaism_enc.en-academic.com/14322/NATHAN%2C_MORDECAI
+:::
+
+---
+
+## El salto computacional
+
+**1949**: Roberto Busa + IBM
+
+- Index Thomisticus (11 millones de palabras)
+- Tarjetas perforadas → 30 años
+- Lo que habría tomado **siglos** manualmente
+
+::: {.footer}
+Winter, T. N. (1999). "[Roberto Busa, S.J., and the Invention of the Machine-Generated Concordance](https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1069&context=classicsfacpub)." *The Classical Bulletin*, 75(1), 3-20.
+
+Busa, R. (1980). "[The Annals of Humanities Computing: The Index Thomisticus](https://link.springer.com/article/10.1007/BF02403798  )." *Computers and the Humanities*, 14(2), 83-90.
+
+:::
+
+---
+
+# Modelar el Lenguaje
+
+## Gramáticas formales
+
+---
+
+## Pāṇini (c. 500 a.C.)
+
+:::: {.columns}
+::: {.column width="50%"}
+*Aṣṭādhyāyī* ("Ocho Capítulos")
+
+- **3,959 reglas** para generar todas las oraciones posibles en sánscrito
+- Conceptos de fonema, morfema, raíz
+- Metareglas, transformaciones, recursión
+- Comparación con máquina de Turing
+
+:::
+
+::: {.column width="50%"}
+![Manuscrito del Aṣṭādhyāyī](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Ashtadhyayi_manuscript.jpg/300px-Ashtadhyayi_manuscript.jpg){width="280"}
+:::
+::::
+
+---
+
+## Pāṇini y la computación moderna
+
+Su sistema tiene **poder computacional equivalente** a una máquina de Turing
+
+Influyó en:
+
+- Ferdinand de Saussure
+- Leonard Bloomfield
+- Noam Chomsky
+- Backus-Naur Form (BNF)
+- Teoría de lenguajes formales
+
+::: {.footer}
+Emeneau, M. B. (1988). Bloomfield and Pānini. Language, 64(4), 755–760. https://doi.org/10.2307/414567
+:::
+
+---
+
+# Replicar el Lenguaje
+
+## Máquinas parlantes
+
+---
+
+## Wolfgang von Kempelen (1769-1791)
+
+:::: {.columns}
+::: {.column width="60%"}
+- **20 años** de desarrollo
+- Sistema mecánico:
+  - Fuelles (pulmones)
+  - Lengüeta (cuerdas vocales)
+  - Embudo de goma (boca)
+  - Controles manuales
+
+- Podía hablar francés, italiano, inglés
+- Sonaba como voz de niño
+:::
+
+::: {.column width="40%"}
+![La máquina parlante](https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Kempelen_speaking_machine.jpg/300px-Kempelen_speaking_machine.jpg){width="250"}
+:::
+::::
+
+---
+
+## *Mechanismus der menschlichen Sprache* (1791)
+
+![Diagrama de la máquina](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Kempelen-1791.png/600px-Kempelen-1791.png){width="500"}
+
+::: {.footer}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vM8I_J-fdrE?si=nz_ecJaX7RG6XzvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+:::
+
+---
+
+## El legado de von Kempelen
+
+Influenció a:
+
+- **Charles Wheatstone** (1835) - réplica mejorada
+- **Alexander Graham Bell** - vio la réplica, construyó la suya
+  - Eventualmente inventó el teléfono (1876)
+
+::: {.footer}
+Flanagan, J. L. (1972). "Voices of men and machines." *The Journal of the Acoustical Society of America*, 51(5B), 1375-1387.
+
+Brackhane, F., Trouvain, J., & Sproat, R. (Eds.). (2017). *Der Mechanismus der menschlichen Sprache / The Mechanism of Human Speech*. TUD Press.
+:::
+
+---
+
+## Hoy: De lo mecánico a lo digital
+
+- Síntesis de voz (TTS)
+- Asistentes virtuales (Siri, Alexa)
+- **IA Generativa** (ChatGPT, Claude)
+
+La pregunta sigue siendo la misma: ¿Podemos replicar artificialmente el habla humana?
+
+---
+
+# Procesamiento del Lenguaje
+
+## Antes de la computación
+
+---
+
+## Los precursores
+
+- Diccionarios multilingües
+- Métodos de gramática-traducción
+- Lenguas universales (Esperanto, 1887)
+
+**El sueño:** traducción automática
+
+**El problema:** Sin las herramientas computacionales, era imposible
+
+---
+
+# La Era Computacional
+
+## El salto cuántico
+
+---
+
+## Línea de tiempo
+
+:::: {.columns}
+::: {.column width="50%"}
+**Antes de la computación:**
+
+- **500 a.C.**: Pāṇini - gramática formal
+- **1230**: Concordancia bíblica (500 monjes)
+- **1448**: Nathan - concordancia hebrea (10 años)
+- **1737**: Cruden - concordancia inglesa (1 año)
+- **1791**: von Kempelen - máquina parlante (20 años)
+:::
+
+::: {.column width="50%"}
+**Con computación:**
+
+- **1949**: Busa + IBM
+- **1954**: Experimento Georgetown
+- **1966**: ELIZA
+- **1990s**: Revolución estadística
+- **2020s**: LLMs (ChatGPT)
+:::
+::::
+
+---
+
+## El patrón
+
+Los pioneros pre-computacionales pasaron **décadas** en tareas que les tomaron **vidas enteras**:
+
+- Cruden: 1 año en un libro
+- Pāṇini: su vida formalizando un idioma
+- von Kempelen: 20 años en una máquina que hablaba como niño
+
+---
+
+## Lo que cambió
+
+La computación **no cambió las preguntas**
+
+Cambió lo que es **posible responder**
+
+- Analizar textos → a escala masiva
+- Modelar lenguaje → con millones de parámetros
+- Replicar habla → indistinguible de humanos
+- Procesar lenguaje → en tiempo real
+
+---
+
+---
+
+## Future of linguistics
+
+> The future of linguistics is not in philosophy, from which it is emerging, but in standard science, into which it can now move with confidence. This requires that linguistics finally recognize that the true object of study of a scientific linguist is the people that speak and understand and communicate in other ways, and other relevant aspects of the real world. 
+(Yngve, 2000, p. 69)
+
+---
+
+## Por eso necesitas programación
+
+No para hacer preguntas nuevas
+
+Sino para **finalmente responder las antiguas**
+
+:::: {.columns}
+::: {.column width="33%"}
+**Fundamentos:**
+
+- Programación
+- Bases de datos
+- Estructuras de datos
+:::
+
+::: {.column width="33%"}
+**Aplicaciones:**
+
+- Corpus linguistics
+- PLN
+- Humanidades digitales
+:::
+
+::: {.column width="33%"}
+**Futuro:**
+
+- IA para lingüística
+- Análisis a gran escala
+- Nuevas herramientas
+:::
+::::
+
+---
+
+## Referencias principales
+
+::: {.references style="font-size: 0.7em;"}
+- Bloomfield, L. (1929). Review of Liebich: Konkordanz Pāṇini-Candra. *Language*, 5(4), 267-276.
+- Busa, R. (1980). The Annals of Humanities Computing. *Computers and the Humanities*, 14(2), 83-90.
+- Cardona, G. (1997). *Pāṇini: His Work and its Traditions*. Motilal Banarsidass.
+- Hockey, S. (2004). The History of Humanities Computing. In S. Schreibman et al. (Eds.), *A Companion to Digital Humanities*. Blackwell.
+- Jones, S. E. (2016). *Roberto Busa, S.J., and the Emergence of Humanities Computing*. Routledge.
+- Kiparsky, P. (2009). On the Architecture of Pāṇini's Grammar. In *Sanskrit Computational Linguistics*. Springer.
+- Norvig, P. (2011). On Chomsky and the Two Cultures of Statistical Learning. http://norvig.com/chomsky.html
+- von Kempelen, W. (1791). *Mechanismus der menschlichen Sprache*. J. V. Degen.
+:::
+
+---
+
+## ¡Comencemos!
+
+**Este curso te enseñará:**
+
+Las herramientas computacionales fundamentales para participar en esta transformación
+
+---

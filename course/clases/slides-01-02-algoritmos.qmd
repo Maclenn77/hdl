@@ -1,0 +1,58 @@
+---
+title: "Algoritmos y funciones"
+subtitle: "Cómo pensar como programador"
+author: "J. P. Pérez-Tejada"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+    logo: ""
+lang: es
+---
+
+## Recordemos
+Al inicio de la clase describieron como realizan tareas cotidianas
+
+---
+
+## ¿Qué entendemos por «algoritmo»?
+### Ejemplos de uso
+
+«la clave está en la creación de un algoritmo diseñado para moderar y filtrar el contenido compartido a través de WhatsApp.»
+
+«No dejes que un algoritmo te diga lo que debes leer.»
+
+«Muchas personas han aprovechado para criticar el polémico algoritmo de Netflix»
+
+::: {.footer}
+Davies, Mark. (2016-) Corpus of News on the Web (NOW). Disponible en línea https://www.english-corpora.org/now/.
+:::
+
+---
+
+## Qué es un algoritmo
+
+> Una secuencia finita de pasos bien definidos que resuelven un problema o realizan una tarea especifica.
+
+---
+
+## Características
+
+- Finito
+- Bien definido
+- Efectivo
+- Entrada y salida (_input_, _output_)
+
+---
+
+## Ejercicio 1 
+
+Crea un algoritmo para identificar pares mínimos
+
+Input: palabra_1, palabra_2
+
+Output: Verdadero / Falso
+
+---

@@ -1,0 +1,16 @@
+---
+title: Pensar como programador
+---
+## Algoritmos y funciones 
+
+<iframe 
+  src="slides-01-02-algoritmos.html" 
+  width="100%" 
+  height="600px"
+  style="border: 1px solid #ccc;"
+  allowfullscreen>
+</iframe>
+
+---
+[Tema anterior](../clases/00_00_presentacion.qmd) | [Siguiente tema](01_02_pensar_como_programador.qmd)
+

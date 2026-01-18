@@ -1,0 +1,70 @@
+---
+title: Introducción
+---
+
+## ¿Cómo las herramientas digitales apoyan la investigación lingüística?
+
+En 1949, el sacerdote jesuíta Roberto Busa se acercó a director general de IBM para solicitar su apoyo que parecía monumental, crear una máquina que identificara todas las concordancias posibles en la obra de Santo Tomás de Aquino (10,631,980 palabras).
+
+- [Index Thomisticus](https://www.corpusthomisticum.org/it/)
+
+Este proyecto es considerado fundacional dentro de las humanidades digitales y es el primer ejemplo que tenemos de cómo las herramientas de cómputo pueden apoyar en la investigación lingüística, filológica, histórica y filosófica.
+
+<iframe 
+  src="slides-01-intro.html" 
+  width="100%" 
+  height="600px"
+  style="border: 1px solid #ccc;"
+  allowfullscreen>
+</iframe>
+
+## Intersecciones fundacionales
+
+Apartir de entonces, las intersecciones entre lingüística y computación han creado diferentes líneas de investigación.
+
+### ELIZA
+
+En 1966, Joseph Weizenbaum creó ELIZA, un programa conversacional que simulaba a un psicoterapeuta rogeriano y que planteó preguntas fundamentales sobre el procesamiento del lenguaje natural y la interacción humano-máquina. ELIZA no solo fue un hito técnico, sino también filosófico: reveló cómo los humanos tendemos a atribuir comprensión genuina a sistemas que simplemente manipulan patrones lingüísticos.
+
+A continuación, un breve extracto de una conversación con ELIZA para ilustrar su funcionamiento:
+```
+User: I need some help, that much seems certain.
+ELIZA: WHAT WOULD IT MEAN TO YOU IF YOU GOT SOME HELP
+User: Perhaps I could learn to get along with my mother.
+ELIZA: TELL ME MORE ABOUT YOUR FAMILY
+User: My mother takes care of me.
+ELIZA: WHO ELSE IN YOU FAMILY TAKES CARE OF YOU
+User: My father.
+ELIZA: YOUR FATHER
+User: You are like my father in some ways
+```
+
+### Generación de textos
+
+Otro precedente menos conocido pero igualmente significativo es el trabajo literario-computacional de J.M. Coetzee durante su período en IBM a finales de los años sesenta. Coetzee, quien más tarde ganaría el Premio Nobel de Literatura, experimentó con la generación automática de poemas mediante algoritmos, explorando las posibilidades creativas y los límites de la computación en el ámbito del lenguaje literario. Estos experimentos tempranos anticiparon debates contemporáneos sobre creatividad, autoría y la naturaleza del lenguaje.
+
+### Marco teórico
+
+Podríamos añadir también los trabajos de Noam Chomsky sobre gramáticas formales y jerarquías lingüísticas, que, aunque no desarrollados específicamente para computadoras, proporcionaron el marco teórico fundamental para el desarrollo de lenguajes de programación y sistemas de análisis sintáctico automático. Del mismo modo, los primeros sistemas de traducción automática de los años cincuenta, aunque limitados, inauguraron una línea de investigación que continúa siendo central en el procesamiento del lenguaje natural.
+
+
+## Líneas de investigación contemporáneas
+
+Hoy en día, las herramientas digitales permiten múltiples aproximaciones al estudio del lenguaje. La lingüística de corpus se ha consolidado como metodología central, permitiendo el análisis de millones de palabras para identificar patrones de uso, variación y cambio lingüístico que serían imposibles de detectar mediante introspección o análisis manual. Proyectos como el *Corpus del Español* o el *British National Corpus* han democratizado el acceso a datos lingüísticos reales y variados.
+
+Los métodos estadísticos y computacionales han revolucionado campos como la sociolingüística, donde técnicas de análisis multivariable permiten modelar la variación lingüística considerando simultáneamente múltiples factores sociales y lingüísticos. En fonética, el análisis acústico mediante software especializado ha refinado enormemente nuestra comprensión de la producción y percepción del habla.
+
+La semántica computacional ha desarrollado modelos cada vez más sofisticados de significado léxico, desde bases de datos estructuradas como WordNet hasta los modernos modelos de distribución vectorial que representan palabras como puntos en espacios matemáticos multidimensionales. Las simulaciones computacionales, por su parte, permiten modelar procesos de cambio lingüístico, adquisición del lenguaje o evolución de sistemas comunicativos, ofreciendo insights difíciles de obtener por otros medios.
+
+## Herramientas al servicio de las preguntas
+
+Sin embargo, es fundamental mantener una perspectiva crítica y equilibrada. Las herramientas digitales son precisamente eso: herramientas. Su valor no radica en su sofisticación técnica, sino en su capacidad para ayudarnos a responder preguntas lingüísticas significativas. Un análisis estadístico complejo sin una pregunta de investigación clara carece de sentido; del mismo modo, el acceso a corpus masivos no reemplaza la necesidad de reflexión teórica y rigor metodológico.
+
+![Good Science. If you think curiosity without rigor is bad, you should see rigor without curiosity. Fuente: XKCD](https://imgs.xkcd.com/comics/good_science_2x.png)
+
+Conocer las herramientas digitales disponibles, entender sus posibilidades y limitaciones, y saber cuándo y cómo aplicarlas son competencias esenciales para el investigador contemporáneo. Pero estas competencias deben estar siempre al servicio de la curiosidad intelectual, del pensamiento crítico y de preguntas de investigación bien formuladas. Las tecnologías cambian rápidamente, pero las buenas preguntas y el rigor metodológico permanecen como el corazón de cualquier investigación científica.
+
+
+Este curso busca equiparles con el conocimiento práctico de diferentes herramientas digitales y la capacidad para explorar y desarrollar nuevas. Pero sobre todo, desarrollar en ustedes la capacidad de evaluar críticamente cuándo, cómo y por qué utilizarlas en función de sus propios objetivos de investigación.
+
+[Tema anterior](../clases/00_00_presentacion.qmd) | [Siguiente tema](01_02_pensar_como_programador.qmd)
