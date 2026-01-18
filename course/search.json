@@ -119,6 +119,174 @@
     "text": "Recursos necesarios\nPara aprovechar al máximo este curso, los estudiantes necesitarán acceso a una computadora con conexión a internet. Se utilizarán herramientas de software de código abierto, por lo que no se requiere la compra de licencias adicionales."
   },
   {
+    "objectID": "clases/slides-01-intro.html#cómo-las-herramientas-digitales-ayudan-a-la-investigación-lingüística",
+    "href": "clases/slides-01-intro.html#cómo-las-herramientas-digitales-ayudan-a-la-investigación-lingüística",
+    "title": "Computación y Lingüística",
+    "section": "¿Cómo las herramientas digitales ayudan a la investigación lingüística?",
+    "text": "¿Cómo las herramientas digitales ayudan a la investigación lingüística?\nLas preguntas fundamentales sobre el lenguaje son antiguas.\nNo han cambiado las preguntas, sino las herramientas para responderlas."
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#cuatro-ejes",
+    "href": "clases/slides-01-intro.html#cuatro-ejes",
+    "title": "Computación y Lingüística",
+    "section": "Cuatro ejes",
+    "text": "Cuatro ejes\n\n\nObjetivos de investigación\n\nAnalizar textos\nModelar el lenguaje\nSimular el habla\nProcesar lenguaje\n\n\nLíneas de investigación\n\nHumanidades digitales\nLingüística computacional\nSíntesis de voz / GenAI\nPLN (NLP)"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#hugo-de-de-sancto-charo-1230",
+    "href": "clases/slides-01-intro.html#hugo-de-de-sancto-charo-1230",
+    "title": "Computación y Lingüística",
+    "section": "Hugo de de Sancto Charo (1230)",
+    "text": "Hugo de de Sancto Charo (1230)\n\n\nPrimera concordancia de la Biblia Vulgata\n500 monjes trabajaron en su elaboración\nDécadas de trabajo continuo\n\n\nRouse, M., & Rouse, R. (1991). The development of research tools in the thirteenth century. En Authentic witnesses: Approaches to medieval texts and manuscripts (pp. 221-225). (Citado en Norman, J., s.f., The emergence in Paris of concordances and subject indexes, History of Information, https://historyofinformation.com/detail.php?id=1950) Hugo de Sancto Charo. (ca. 1250). Concordantiae Sacrorum Bibliorum [Manuscrito, folio 9]. Bibliothèque nationale de France, MS Latin 14232. Gallica. https://gallica.bnf.fr/ark:/12148/btv1b10029582g/f9.item"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#alexander-cruden-1737",
+    "href": "clases/slides-01-intro.html#alexander-cruden-1737",
+    "title": "Computación y Lingüística",
+    "section": "Alexander Cruden (1737)",
+    "text": "Alexander Cruden (1737)\n\n\nA Complete Concordance to the Holy Scriptures\n\nTrabajó solo\n7am a 1pm cada día\nMenos de 1 año para el trabajo principal\n1,340 páginas indexando cada palabra significativa\n\n\n\n\n\nCruden’s Concordance. (2024, 8 de octubre). En Wikipedia. https://en.wikipedia.org/wiki/Cruden%27s_Concordance"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#rabino-mordecai-nathan-1448",
+    "href": "clases/slides-01-intro.html#rabino-mordecai-nathan-1448",
+    "title": "Computación y Lingüística",
+    "section": "Rabino Mordecai Nathan (1448)",
+    "text": "Rabino Mordecai Nathan (1448)\n\nConcordancia del Tanaj (Biblia hebrea)\n10 años de trabajo\nMeʾir Netiv (“Sendero de Luz”)\n\n\nNathan, Mordecai. (s.f.). En Encyclopedia Judaica. Academic Dictionaries and Encyclopedias. https://judaism_enc.en-academic.com/14322/NATHAN%2C_MORDECAI"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#el-salto-computacional",
+    "href": "clases/slides-01-intro.html#el-salto-computacional",
+    "title": "Computación y Lingüística",
+    "section": "El salto computacional",
+    "text": "El salto computacional\n1949: Roberto Busa + IBM\n\nIndex Thomisticus (11 millones de palabras)\nTarjetas perforadas → 30 años\nLo que habría tomado siglos manualmente\n\n\nWinter, T. N. (1999). “Roberto Busa, S.J., and the Invention of the Machine-Generated Concordance.” The Classical Bulletin, 75(1), 3-20.\nBusa, R. (1980). “The Annals of Humanities Computing: The Index Thomisticus.” Computers and the Humanities, 14(2), 83-90."
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#gramáticas-formales",
+    "href": "clases/slides-01-intro.html#gramáticas-formales",
+    "title": "Computación y Lingüística",
+    "section": "Gramáticas formales",
+    "text": "Gramáticas formales"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#pāṇini-c.-500-a.c.",
+    "href": "clases/slides-01-intro.html#pāṇini-c.-500-a.c.",
+    "title": "Computación y Lingüística",
+    "section": "Pāṇini (c. 500 a.C.)",
+    "text": "Pāṇini (c. 500 a.C.)\n\n\nAṣṭādhyāyī (“Ocho Capítulos”)\n\n3,959 reglas para generar todas las oraciones posibles en sánscrito\nConceptos de fonema, morfema, raíz\nMetareglas, transformaciones, recursión\nComparación con máquina de Turing\n\n\n\n\n\nManuscrito del Aṣṭādhyāyī"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#pāṇini-y-la-computación-moderna",
+    "href": "clases/slides-01-intro.html#pāṇini-y-la-computación-moderna",
+    "title": "Computación y Lingüística",
+    "section": "Pāṇini y la computación moderna",
+    "text": "Pāṇini y la computación moderna\nSu sistema tiene poder computacional equivalente a una máquina de Turing\nInfluyó en:\n\nFerdinand de Saussure\nLeonard Bloomfield\nNoam Chomsky\nBackus-Naur Form (BNF)\nTeoría de lenguajes formales\n\n\nEmeneau, M. B. (1988). Bloomfield and Pānini. Language, 64(4), 755–760. https://doi.org/10.2307/414567"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#máquinas-parlantes",
+    "href": "clases/slides-01-intro.html#máquinas-parlantes",
+    "title": "Computación y Lingüística",
+    "section": "Máquinas parlantes",
+    "text": "Máquinas parlantes"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#wolfgang-von-kempelen-1769-1791",
+    "href": "clases/slides-01-intro.html#wolfgang-von-kempelen-1769-1791",
+    "title": "Computación y Lingüística",
+    "section": "Wolfgang von Kempelen (1769-1791)",
+    "text": "Wolfgang von Kempelen (1769-1791)\n\n\n\n20 años de desarrollo\nSistema mecánico:\n\nFuelles (pulmones)\nLengüeta (cuerdas vocales)\nEmbudo de goma (boca)\nControles manuales\n\nPodía hablar francés, italiano, inglés\nSonaba como voz de niño\n\n\n\n\n\nLa máquina parlante"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#mechanismus-der-menschlichen-sprache-1791",
+    "href": "clases/slides-01-intro.html#mechanismus-der-menschlichen-sprache-1791",
+    "title": "Computación y Lingüística",
+    "section": "Mechanismus der menschlichen Sprache (1791)",
+    "text": "Mechanismus der menschlichen Sprache (1791)\n\nDiagrama de la máquina"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#el-legado-de-von-kempelen",
+    "href": "clases/slides-01-intro.html#el-legado-de-von-kempelen",
+    "title": "Computación y Lingüística",
+    "section": "El legado de von Kempelen",
+    "text": "El legado de von Kempelen\nInfluenció a:\n\nCharles Wheatstone (1835) - réplica mejorada\nAlexander Graham Bell - vio la réplica, construyó la suya\n\nEventualmente inventó el teléfono (1876)\n\n\n\nFlanagan, J. L. (1972). “Voices of men and machines.” The Journal of the Acoustical Society of America, 51(5B), 1375-1387.\nBrackhane, F., Trouvain, J., & Sproat, R. (Eds.). (2017). Der Mechanismus der menschlichen Sprache / The Mechanism of Human Speech. TUD Press."
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#hoy-de-lo-mecánico-a-lo-digital",
+    "href": "clases/slides-01-intro.html#hoy-de-lo-mecánico-a-lo-digital",
+    "title": "Computación y Lingüística",
+    "section": "Hoy: De lo mecánico a lo digital",
+    "text": "Hoy: De lo mecánico a lo digital\n\nSíntesis de voz (TTS)\nAsistentes virtuales (Siri, Alexa)\nIA Generativa (ChatGPT, Claude)\n\nLa pregunta sigue siendo la misma: ¿Podemos replicar artificialmente el habla humana?"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#antes-de-la-computación",
+    "href": "clases/slides-01-intro.html#antes-de-la-computación",
+    "title": "Computación y Lingüística",
+    "section": "Antes de la computación",
+    "text": "Antes de la computación"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#los-precursores",
+    "href": "clases/slides-01-intro.html#los-precursores",
+    "title": "Computación y Lingüística",
+    "section": "Los precursores",
+    "text": "Los precursores\n\nDiccionarios multilingües\nMétodos de gramática-traducción\nLenguas universales (Esperanto, 1887)\n\nEl sueño: traducción automática\nEl problema: Sin las herramientas computacionales, era imposible"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#el-salto-cuántico",
+    "href": "clases/slides-01-intro.html#el-salto-cuántico",
+    "title": "Computación y Lingüística",
+    "section": "El salto cuántico",
+    "text": "El salto cuántico"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#línea-de-tiempo",
+    "href": "clases/slides-01-intro.html#línea-de-tiempo",
+    "title": "Computación y Lingüística",
+    "section": "Línea de tiempo",
+    "text": "Línea de tiempo\n\n\nAntes de la computación:\n\n500 a.C.: Pāṇini - gramática formal\n1230: Concordancia bíblica (500 monjes)\n1448: Nathan - concordancia hebrea (10 años)\n1737: Cruden - concordancia inglesa (1 año)\n1791: von Kempelen - máquina parlante (20 años)\n\n\nCon computación:\n\n1949: Busa + IBM\n1954: Experimento Georgetown\n1966: ELIZA\n1990s: Revolución estadística\n2020s: LLMs (ChatGPT)"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#el-patrón",
+    "href": "clases/slides-01-intro.html#el-patrón",
+    "title": "Computación y Lingüística",
+    "section": "El patrón",
+    "text": "El patrón\nLos pioneros pre-computacionales pasaron décadas en tareas que les tomaron vidas enteras:\n\nCruden: 1 año en un libro\nPāṇini: su vida formalizando un idioma\nvon Kempelen: 20 años en una máquina que hablaba como niño"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#lo-que-cambió",
+    "href": "clases/slides-01-intro.html#lo-que-cambió",
+    "title": "Computación y Lingüística",
+    "section": "Lo que cambió",
+    "text": "Lo que cambió\nLa computación no cambió las preguntas\nCambió lo que es posible responder\n\nAnalizar textos → a escala masiva\nModelar lenguaje → con millones de parámetros\nReplicar habla → indistinguible de humanos\nProcesar lenguaje → en tiempo real"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#future-of-linguistics",
+    "href": "clases/slides-01-intro.html#future-of-linguistics",
+    "title": "Computación y Lingüística",
+    "section": "Future of linguistics",
+    "text": "Future of linguistics\n\nThe future of linguistics is not in philosophy, from which it is emerging, but in standard science, into which it can now move with confidence. This requires that linguistics finally recognize that the true object of study of a scientific linguist is the people that speak and understand and communicate in other ways, and other relevant aspects of the real world. (Yngve, 2000, p. 69)"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#por-eso-necesitas-programación",
+    "href": "clases/slides-01-intro.html#por-eso-necesitas-programación",
+    "title": "Computación y Lingüística",
+    "section": "Por eso necesitas programación",
+    "text": "Por eso necesitas programación\nNo para hacer preguntas nuevas\nSino para finalmente responder las antiguas\n\n\nFundamentos:\n\nProgramación\nBases de datos\nEstructuras de datos\n\n\nAplicaciones:\n\nCorpus linguistics\nPLN\nHumanidades digitales\n\n\nFuturo:\n\nIA para lingüística\nAnálisis a gran escala\nNuevas herramientas"
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#referencias-principales",
+    "href": "clases/slides-01-intro.html#referencias-principales",
+    "title": "Computación y Lingüística",
+    "section": "Referencias principales",
+    "text": "Referencias principales\n\n\nBloomfield, L. (1929). Review of Liebich: Konkordanz Pāṇini-Candra. Language, 5(4), 267-276.\nBusa, R. (1980). The Annals of Humanities Computing. Computers and the Humanities, 14(2), 83-90.\nCardona, G. (1997). Pāṇini: His Work and its Traditions. Motilal Banarsidass.\nHockey, S. (2004). The History of Humanities Computing. In S. Schreibman et al. (Eds.), A Companion to Digital Humanities. Blackwell.\nJones, S. E. (2016). Roberto Busa, S.J., and the Emergence of Humanities Computing. Routledge.\nKiparsky, P. (2009). On the Architecture of Pāṇini’s Grammar. In Sanskrit Computational Linguistics. Springer.\nNorvig, P. (2011). On Chomsky and the Two Cultures of Statistical Learning. http://norvig.com/chomsky.html\nvon Kempelen, W. (1791). Mechanismus der menschlichen Sprache. J. V. Degen."
+  },
+  {
+    "objectID": "clases/slides-01-intro.html#comencemos",
+    "href": "clases/slides-01-intro.html#comencemos",
+    "title": "Computación y Lingüística",
+    "section": "¡Comencemos!",
+    "text": "¡Comencemos!\nEste curso te enseñará:\nLas herramientas computacionales fundamentales para participar en esta transformación"
+  },
+  {
     "objectID": "clases/01_03_proyectos.html",
     "href": "clases/01_03_proyectos.html",
     "title": "",
@@ -130,7 +298,42 @@
     "href": "clases/01_03_proyectos.html#humanidades-digtiales",
     "title": "",
     "section": "Humanidades digtiales",
-    "text": "Humanidades digtiales\nRepublic of Letters"
+    "text": "Humanidades digtiales\n\nProyectos destacados\n\nRepublic of Letters es un proyecto de Stanford que busca mapear las redes epistolares de los intelectuales europeos y americanos entre los siglos XVII y XIX. Utilizando técnicas de análisis de redes sociales, el proyecto visualiza cómo las ideas y conocimientos se difundieron a través de las cartas intercambiadas entre figuras prominentes de la época.\nBlake Archive es una plataforma digital dedicada a la obra del poeta y artista William Blake. El proyecto ofrece acceso a manuscritos, impresiones y grabados de Blake, junto con herramientas para el análisis textual y visual, permitiendo a los investigadores explorar la intersección entre texto e imagen en su trabajo.\nDigitales Sammlungen es una iniciativa alemana que digitaliza y pone a disposición del público una vasta colección de libros, manuscritos, mapas y otros materiales culturales. El proyecto utiliza tecnologías avanzadas de digitalización y metadatos para facilitar la búsqueda y el acceso a estos recursos históricos."
+  },
+  {
+    "objectID": "clases/slides-01-02-algoritmos.html#recordemos",
+    "href": "clases/slides-01-02-algoritmos.html#recordemos",
+    "title": "Algoritmos y funciones",
+    "section": "Recordemos",
+    "text": "Recordemos\nAl inicio de la clase describieron como realizan tareas cotidianas"
+  },
+  {
+    "objectID": "clases/slides-01-02-algoritmos.html#qué-entendemos-por-algoritmo",
+    "href": "clases/slides-01-02-algoritmos.html#qué-entendemos-por-algoritmo",
+    "title": "Algoritmos y funciones",
+    "section": "¿Qué entendemos por «algoritmo»?",
+    "text": "¿Qué entendemos por «algoritmo»?\nEjemplos de uso\n«la clave está en la creación de un algoritmo diseñado para moderar y filtrar el contenido compartido a través de WhatsApp.»\n«No dejes que un algoritmo te diga lo que debes leer.»\n«Muchas personas han aprovechado para criticar el polémico algoritmo de Netflix»\n\nDavies, Mark. (2016-) Corpus of News on the Web (NOW). Disponible en línea https://www.english-corpora.org/now/."
+  },
+  {
+    "objectID": "clases/slides-01-02-algoritmos.html#qué-es-un-algoritmo",
+    "href": "clases/slides-01-02-algoritmos.html#qué-es-un-algoritmo",
+    "title": "Algoritmos y funciones",
+    "section": "Qué es un algoritmo",
+    "text": "Qué es un algoritmo\n\nUna secuencia finita de pasos bien definidos que resuelven un problema o realizan una tarea especifica."
+  },
+  {
+    "objectID": "clases/slides-01-02-algoritmos.html#características",
+    "href": "clases/slides-01-02-algoritmos.html#características",
+    "title": "Algoritmos y funciones",
+    "section": "Características",
+    "text": "Características\n\nFinito\nBien definido\nEfectivo\nEntrada y salida (input, output)"
+  },
+  {
+    "objectID": "clases/slides-01-02-algoritmos.html#ejercicio-1",
+    "href": "clases/slides-01-02-algoritmos.html#ejercicio-1",
+    "title": "Algoritmos y funciones",
+    "section": "Ejercicio 1",
+    "text": "Ejercicio 1\nCrea un algoritmo para identificar pares mínimos\nInput: palabra_1, palabra_2\nOutput: Verdadero / Falso"
   },
   {
     "objectID": "index.html",
@@ -144,91 +347,105 @@
     "href": "index.html#contenido-del-curso",
     "title": "Herramientas digitales para lingüística",
     "section": "Contenido del curso",
-    "text": "Contenido del curso\n\nIntroducción\n\nPresentación del curso y objetivos de aprendizaje\nImportancia de las herramientas digitales en lingüística\nVisión general de las tecnologías y lenguajes de programación\nConfiguración del entorno de trabajo\n\n\n\nControl de Versiones con Git y GitHub\n\nIntroducción a Git: repositorio, commit, branch\nGitHub y colaboración remota\nDocumentación de proyectos y trabajo en equipo\n\n\n\nFundamentos de Programación con Python\nSemanas 1-4 (16 horas)\n\nIntroducción al curso y pensamiento computacional\nVariables, tipos de datos y estructuras de control\nListas, tuplas, diccionarios y bucles\nFunciones, buenas prácticas y depuración de código"
+    "text": "Contenido del curso\n\nIntroducción\n\nPresentación del curso y objetivos de aprendizaje\n¿Cómo las herramientas digitales apoyan la investigación lingüística?\nPensar como programador\nConfiguración del entorno de trabajo\n\n\n\nControl de Versiones con Git y GitHub\n\nIntroducción a Git: repositorio, commit, branch\nGitHub y colaboración remota\nDocumentación de proyectos y trabajo en equipo\n\n\n\nFundamentos de Programación con Python\nSemanas 1-4 (16 horas)\n\nIntroducción al curso y pensamiento computacional\nVariables, tipos de datos y estructuras de control\nListas, tuplas, diccionarios y bucles\nFunciones, buenas prácticas y depuración de código"
   },
   {
-    "objectID": "clases/01_01_presentación.html",
-    "href": "clases/01_01_presentación.html",
+    "objectID": "clases/01_02_pensar_como_programador.html",
+    "href": "clases/01_02_pensar_como_programador.html",
+    "title": "Pensar como programador",
+    "section": "",
+    "text": "Tema anterior | Siguiente tema"
+  },
+  {
+    "objectID": "clases/01_02_pensar_como_programador.html#algoritmos-y-funciones",
+    "href": "clases/01_02_pensar_como_programador.html#algoritmos-y-funciones",
+    "title": "Pensar como programador",
+    "section": "",
+    "text": "Tema anterior | Siguiente tema"
+  },
+  {
+    "objectID": "clases/01_01_intro.html",
+    "href": "clases/01_01_intro.html",
+    "title": "Introducción",
+    "section": "",
+    "text": "En 1949, el sacerdote jesuíta Roberto Busa se acercó a director general de IBM para solicitar su apoyo que parecía monumental, crear una máquina que identificara todas las concordancias posibles en la obra de Santo Tomás de Aquino (10,631,980 palabras).\n\nIndex Thomisticus\n\nEste proyecto es considerado fundacional dentro de las humanidades digitales y es el primer ejemplo que tenemos de cómo las herramientas de cómputo pueden apoyar en la investigación lingüística, filológica, histórica y filosófica."
+  },
+  {
+    "objectID": "clases/01_01_intro.html#cómo-las-herramientas-digitales-apoyan-la-investigación-lingüística",
+    "href": "clases/01_01_intro.html#cómo-las-herramientas-digitales-apoyan-la-investigación-lingüística",
+    "title": "Introducción",
+    "section": "",
+    "text": "En 1949, el sacerdote jesuíta Roberto Busa se acercó a director general de IBM para solicitar su apoyo que parecía monumental, crear una máquina que identificara todas las concordancias posibles en la obra de Santo Tomás de Aquino (10,631,980 palabras).\n\nIndex Thomisticus\n\nEste proyecto es considerado fundacional dentro de las humanidades digitales y es el primer ejemplo que tenemos de cómo las herramientas de cómputo pueden apoyar en la investigación lingüística, filológica, histórica y filosófica."
+  },
+  {
+    "objectID": "clases/01_01_intro.html#intersecciones-fundacionales",
+    "href": "clases/01_01_intro.html#intersecciones-fundacionales",
+    "title": "Introducción",
+    "section": "Intersecciones fundacionales",
+    "text": "Intersecciones fundacionales\nApartir de entonces, las intersecciones entre lingüística y computación han creado diferentes líneas de investigación.\n\nELIZA\nEn 1966, Joseph Weizenbaum creó ELIZA, un programa conversacional que simulaba a un psicoterapeuta rogeriano y que planteó preguntas fundamentales sobre el procesamiento del lenguaje natural y la interacción humano-máquina. ELIZA no solo fue un hito técnico, sino también filosófico: reveló cómo los humanos tendemos a atribuir comprensión genuina a sistemas que simplemente manipulan patrones lingüísticos.\nA continuación, un breve extracto de una conversación con ELIZA para ilustrar su funcionamiento:\nUser: I need some help, that much seems certain.\nELIZA: WHAT WOULD IT MEAN TO YOU IF YOU GOT SOME HELP\nUser: Perhaps I could learn to get along with my mother.\nELIZA: TELL ME MORE ABOUT YOUR FAMILY\nUser: My mother takes care of me.\nELIZA: WHO ELSE IN YOU FAMILY TAKES CARE OF YOU\nUser: My father.\nELIZA: YOUR FATHER\nUser: You are like my father in some ways\n\n\nGeneración de textos\nOtro precedente menos conocido pero igualmente significativo es el trabajo literario-computacional de J.M. Coetzee durante su período en IBM a finales de los años sesenta. Coetzee, quien más tarde ganaría el Premio Nobel de Literatura, experimentó con la generación automática de poemas mediante algoritmos, explorando las posibilidades creativas y los límites de la computación en el ámbito del lenguaje literario. Estos experimentos tempranos anticiparon debates contemporáneos sobre creatividad, autoría y la naturaleza del lenguaje.\n\n\nMarco teórico\nPodríamos añadir también los trabajos de Noam Chomsky sobre gramáticas formales y jerarquías lingüísticas, que, aunque no desarrollados específicamente para computadoras, proporcionaron el marco teórico fundamental para el desarrollo de lenguajes de programación y sistemas de análisis sintáctico automático. Del mismo modo, los primeros sistemas de traducción automática de los años cincuenta, aunque limitados, inauguraron una línea de investigación que continúa siendo central en el procesamiento del lenguaje natural."
+  },
+  {
+    "objectID": "clases/01_01_intro.html#líneas-de-investigación-contemporáneas",
+    "href": "clases/01_01_intro.html#líneas-de-investigación-contemporáneas",
+    "title": "Introducción",
+    "section": "Líneas de investigación contemporáneas",
+    "text": "Líneas de investigación contemporáneas\nHoy en día, las herramientas digitales permiten múltiples aproximaciones al estudio del lenguaje. La lingüística de corpus se ha consolidado como metodología central, permitiendo el análisis de millones de palabras para identificar patrones de uso, variación y cambio lingüístico que serían imposibles de detectar mediante introspección o análisis manual. Proyectos como el Corpus del Español o el British National Corpus han democratizado el acceso a datos lingüísticos reales y variados.\nLos métodos estadísticos y computacionales han revolucionado campos como la sociolingüística, donde técnicas de análisis multivariable permiten modelar la variación lingüística considerando simultáneamente múltiples factores sociales y lingüísticos. En fonética, el análisis acústico mediante software especializado ha refinado enormemente nuestra comprensión de la producción y percepción del habla.\nLa semántica computacional ha desarrollado modelos cada vez más sofisticados de significado léxico, desde bases de datos estructuradas como WordNet hasta los modernos modelos de distribución vectorial que representan palabras como puntos en espacios matemáticos multidimensionales. Las simulaciones computacionales, por su parte, permiten modelar procesos de cambio lingüístico, adquisición del lenguaje o evolución de sistemas comunicativos, ofreciendo insights difíciles de obtener por otros medios."
+  },
+  {
+    "objectID": "clases/01_01_intro.html#herramientas-al-servicio-de-las-preguntas",
+    "href": "clases/01_01_intro.html#herramientas-al-servicio-de-las-preguntas",
+    "title": "Introducción",
+    "section": "Herramientas al servicio de las preguntas",
+    "text": "Herramientas al servicio de las preguntas\nSin embargo, es fundamental mantener una perspectiva crítica y equilibrada. Las herramientas digitales son precisamente eso: herramientas. Su valor no radica en su sofisticación técnica, sino en su capacidad para ayudarnos a responder preguntas lingüísticas significativas. Un análisis estadístico complejo sin una pregunta de investigación clara carece de sentido; del mismo modo, el acceso a corpus masivos no reemplaza la necesidad de reflexión teórica y rigor metodológico.\n\n\n\nGood Science. If you think curiosity without rigor is bad, you should see rigor without curiosity. Fuente: XKCD\n\n\nConocer las herramientas digitales disponibles, entender sus posibilidades y limitaciones, y saber cuándo y cómo aplicarlas son competencias esenciales para el investigador contemporáneo. Pero estas competencias deben estar siempre al servicio de la curiosidad intelectual, del pensamiento crítico y de preguntas de investigación bien formuladas. Las tecnologías cambian rápidamente, pero las buenas preguntas y el rigor metodológico permanecen como el corazón de cualquier investigación científica.\nEste curso busca equiparles con el conocimiento práctico de diferentes herramientas digitales y la capacidad para explorar y desarrollar nuevas. Pero sobre todo, desarrollar en ustedes la capacidad de evaluar críticamente cuándo, cómo y por qué utilizarlas en función de sus propios objetivos de investigación.\nTema anterior | Siguiente tema"
+  },
+  {
+    "objectID": "clases/01_00_presentación.html",
+    "href": "clases/01_00_presentación.html",
     "title": "Presentación del Curso",
     "section": "",
     "text": "Este curso está diseñado para proporcionarte las competencias tecnológicas fundamentales que todo lingüista contemporáneo necesita en su práctica investigativa. En un mundo donde el lenguaje se produce, circula y analiza cada vez más en formatos digitales, dominar estas herramientas te permitirá explorar nuevas dimensiones del fenómeno lingüístico."
   },
   {
-    "objectID": "clases/01_01_presentación.html#bienvenida",
-    "href": "clases/01_01_presentación.html#bienvenida",
+    "objectID": "clases/01_00_presentación.html#bienvenida",
+    "href": "clases/01_00_presentación.html#bienvenida",
     "title": "Presentación del Curso",
     "section": "",
     "text": "Este curso está diseñado para proporcionarte las competencias tecnológicas fundamentales que todo lingüista contemporáneo necesita en su práctica investigativa. En un mundo donde el lenguaje se produce, circula y analiza cada vez más en formatos digitales, dominar estas herramientas te permitirá explorar nuevas dimensiones del fenómeno lingüístico."
   },
   {
-    "objectID": "clases/01_01_presentación.html#objetivo-general",
-    "href": "clases/01_01_presentación.html#objetivo-general",
+    "objectID": "clases/01_00_presentación.html#objetivo-general",
+    "href": "clases/01_00_presentación.html#objetivo-general",
     "title": "Presentación del Curso",
     "section": "Objetivo General",
     "text": "Objetivo General\nQue los estudiantes adquieran conocimientos básicos de herramientas digitales para incorporarlas en su trabajo de investigación lingüística.\nA lo largo del curso, trabajaremos en la intersección entre la lingüística teórica y aplicada con las tecnologías de análisis de datos, preparándote para enfrentar los desafíos metodológicos de la investigación lingüística del siglo XXI."
   },
   {
-    "objectID": "clases/01_01_presentación.html#objetivos-específicos-de-aprendizaje",
-    "href": "clases/01_01_presentación.html#objetivos-específicos-de-aprendizaje",
+    "objectID": "clases/01_00_presentación.html#objetivos-específicos-de-aprendizaje",
+    "href": "clases/01_00_presentación.html#objetivos-específicos-de-aprendizaje",
     "title": "Presentación del Curso",
     "section": "Objetivos Específicos de Aprendizaje",
-    "text": "Objetivos Específicos de Aprendizaje\nAl finalizar el curso, serás capaz de:\n\n1. Fundamentos de Programación\nAplicar conocimientos básicos de programación en Python siguiendo buenas prácticas de codificación que te permitirán automatizar tareas de análisis lingüístico y desarrollar scripts reproducibles.\n\n\n2. Control de Versiones\nUtilizar sistemas de control de versiones (Git y GitHub) para gestionar proyectos de investigación, facilitando la colaboración académica y el seguimiento sistemático de tu trabajo.\n\n\n\n3. Manipulación de Datos\nIdentificar y manipular diferentes tipos de datos relevantes para la investigación lingüística, reconociendo formatos, estructuras y las mejores estrategias para su procesamiento.\n\n\n4. Bases de Datos\nConsultar y gestionar bases de datos utilizando SQL básico y la librería Pandas, habilidades esenciales para trabajar con corpus lingüísticos de gran escala.\n\n\n\n5. APIs y Obtención de Datos\nObtener datos de APIs REST, específicamente WikiData y Mastodon, permitiéndote acceder a repositorios masivos de datos lingüísticos en tiempo real.\n\n\n6. Análisis de Corpus\nAplicar técnicas de distant reading y análisis de concordancias a corpus textuales, explorando patrones lingüísticos que serían imposibles de detectar mediante lectura tradicional.\n\n\n\n7. Tecnologías Emergentes\nComprender los fundamentos de vector embeddings y sus aplicaciones lingüísticas, acercándote a las tecnologías que están revolucionando el procesamiento del lenguaje natural."
+    "text": "Objetivos Específicos de Aprendizaje\nAl finalizar el curso, serás capaz de:\n\n1. Fundamentos de Programación\nAplicar conocimientos básicos de programación en Python siguiendo buenas prácticas de codificación que te permitirán automatizar tareas de análisis lingüístico y desarrollar scripts reproducibles.\n\n\n2. Control de Versiones\nUtilizar sistemas de control de versiones (Git y GitHub) para gestionar proyectos de investigación, facilitando la colaboración académica y el seguimiento sistemático de tu trabajo.\n\n\n\n3. Manipulación de Datos\nIdentificar y manipular diferentes tipos de datos relevantes para la investigación lingüística, reconociendo formatos, estructuras y las mejores estrategias para su procesamiento.\n\n\n4. Bases de Datos\nConsultar y gestionar bases de datos utilizando SQL básico y la librería Pandas, habilidades esenciales para trabajar con corpus lingüísticos de gran escala.\n\n\n\n5. APIs y Obtención de Datos\nObtener datos de APIs REST, específicamente WikiData y Mastodon, permitiéndote acceder a repositorios masivos de datos lingüísticos en tiempo real.\n\n\n6. Análisis de Corpus\nAplicar técnicas de distant reading y análisis de concordancias a corpus textuales, explorando patrones lingüísticos que serían imposibles de detectar mediante lectura tradicional.\n\n\n\n7. Tecnologías Emergentes\nComprender los fundamentos de vector embeddings y sus aplicaciones lingüísticas, acercándote a nuevas tecnologías en el procesamiento del lenguaje natural."
   },
   {
-    "objectID": "clases/01_01_presentación.html#qué-podrás-hacer",
-    "href": "clases/01_01_presentación.html#qué-podrás-hacer",
+    "objectID": "clases/01_00_presentación.html#qué-podrás-hacer",
+    "href": "clases/01_00_presentación.html#qué-podrás-hacer",
     "title": "Presentación del Curso",
     "section": "¿Qué Podrás Hacer?",
-    "text": "¿Qué Podrás Hacer?\nAl concluir este curso, habrás desarrollado un conjunto de competencias que te permitirán:\n\nDiseñar y ejecutar proyectos de investigación basados en datos\nAnalizar corpus lingüísticos de manera sistemática y eficiente\nColaborar en proyectos digitales de investigación\nMantenerte actualizado con las metodologías digitales emergentes en lingüística\nReproducir y compartir tus análisis de manera transparente"
+    "text": "¿Qué Podrás Hacer?\nAl concluir este curso, habrás desarrollado un conjunto de competencias que te permitirán:\n\nDiseñar y ejecutar proyectos de investigación basados en datos\nAnalizar corpus lingüísticos de manera sistemática y eficiente\nColaborar en proyectos digitales de investigación\nMantenerte actualizado con las metodologías digitales emergentes en lingüística\nReproducir y compartir tus análisis de manera transparente\n\n\n¿Qué no vamos a ver en este curso?\nEste no es un curso de:\n\nLingüística Computacional\nHumanidades Digitales\nAnálisis de corpus\nProgramas para análisis estadístico\nProcesamiento del lenguage natural\n\nSin embargo, ofrece el conocimiento técnico requerido para adentrarse con menos fricciones en esos campos."
   },
   {
-    "objectID": "clases/01_01_presentación.html#metodología",
-    "href": "clases/01_01_presentación.html#metodología",
+    "objectID": "clases/01_00_presentación.html#metodología",
+    "href": "clases/01_00_presentación.html#metodología",
     "title": "Presentación del Curso",
     "section": "Metodología",
     "text": "Metodología\nEl curso combina teoría y práctica, privilegiando el aprendizaje activo mediante ejercicios aplicados, proyectos colaborativos y la exploración de casos reales de investigación lingüística."
   },
   {
-    "objectID": "clases/01_01_presentación.html#comencemos",
-    "href": "clases/01_01_presentación.html#comencemos",
+    "objectID": "clases/01_00_presentación.html#comencemos",
+    "href": "clases/01_00_presentación.html#comencemos",
     "title": "Presentación del Curso",
     "section": "¡Comencemos!",
-    "text": "¡Comencemos!\nTe invitamos a aprovechar al máximo esta oportunidad de ampliar tu toolkit metodológico y descubrir nuevas formas de interrogar el lenguaje en la era digital."
-  },
-  {
-    "objectID": "clases/01_00_intro.html",
-    "href": "clases/01_00_intro.html",
-    "title": "",
-    "section": "",
-    "text": "Código"
-  },
-  {
-    "objectID": "clases/01_00_intro.html#intersecciones-fundacionales",
-    "href": "clases/01_00_intro.html#intersecciones-fundacionales",
-    "title": "",
-    "section": "Intersecciones fundacionales",
-    "text": "Intersecciones fundacionales\nDesde entonces, la intersección entre lingüística y ciencias de la computación ha producido desarrollos fascinantes que han redefinido ambos campos. En 1966, Joseph Weizenbaum creó ELIZA, un programa conversacional que simulaba a un psicoterapeuta rogeriano y que planteó preguntas fundamentales sobre el procesamiento del lenguaje natural y la interacción humano-máquina. ELIZA no solo fue un hito técnico, sino también filosófico: reveló cómo los humanos tendemos a atribuir comprensión genuina a sistemas que simplemente manipulan patrones lingüísticos.\nOtro precedente menos conocido pero igualmente significativo es el trabajo literario-computacional de J.M. Coetzee durante su período en IBM a finales de los años sesenta. Coetzee, quien más tarde ganaría el Premio Nobel de Literatura, experimentó con la generación automática de poemas mediante algoritmos, explorando las posibilidades creativas y los límites de la computación en el ámbito del lenguaje literario. Estos experimentos tempranos anticiparon debates contemporáneos sobre creatividad, autoría y la naturaleza del lenguaje.\nPodríamos añadir también los trabajos de Noam Chomsky sobre gramáticas formales y jerarquías lingüísticas, que, aunque no desarrollados específicamente para computadoras, proporcionaron el marco teórico fundamental para el desarrollo de lenguajes de programación y sistemas de análisis sintáctico automático. Del mismo modo, los primeros sistemas de traducción automática de los años cincuenta, aunque limitados, inauguraron una línea de investigación que continúa siendo central en el procesamiento del lenguaje natural.\nA continuación, un breve extracto de una conversación con ELIZA para ilustrar su funcionamiento:\nUser: I need some help, that much seems certain.\nELIZA: WHAT WOULD IT MEAN TO YOU IF YOU GOT SOME HELP\nUser: Perhaps I could learn to get along with my mother.\nELIZA: TELL ME MORE ABOUT YOUR FAMILY\nUser: My mother takes care of me.\nELIZA: WHO ELSE IN YOU FAMILY TAKES CARE OF YOU\nUser: My father.\nELIZA: YOUR FATHER\nUser: You are like my father in some ways"
-  },
-  {
-    "objectID": "clases/01_00_intro.html#líneas-de-investigación-contemporáneas",
-    "href": "clases/01_00_intro.html#líneas-de-investigación-contemporáneas",
-    "title": "",
-    "section": "Líneas de investigación contemporáneas",
-    "text": "Líneas de investigación contemporáneas\nHoy en día, las herramientas digitales permiten múltiples aproximaciones al estudio del lenguaje. La lingüística de corpus se ha consolidado como metodología central, permitiendo el análisis de millones de palabras para identificar patrones de uso, variación y cambio lingüístico que serían imposibles de detectar mediante introspección o análisis manual. Proyectos como el Corpus del Español o el British National Corpus han democratizado el acceso a datos lingüísticos reales y variados.\nLos métodos estadísticos y computacionales han revolucionado campos como la sociolingüística, donde técnicas de análisis multivariable permiten modelar la variación lingüística considerando simultáneamente múltiples factores sociales y lingüísticos. En fonética, el análisis acústico mediante software especializado ha refinado enormemente nuestra comprensión de la producción y percepción del habla.\nLa semántica computacional ha desarrollado modelos cada vez más sofisticados de significado léxico, desde bases de datos estructuradas como WordNet hasta los modernos modelos de distribución vectorial que representan palabras como puntos en espacios matemáticos multidimensionales. Las simulaciones computacionales, por su parte, permiten modelar procesos de cambio lingüístico, adquisición del lenguaje o evolución de sistemas comunicativos, ofreciendo insights difíciles de obtener por otros medios."
-  },
-  {
-    "objectID": "clases/01_00_intro.html#herramientas-al-servicio-de-las-preguntas",
-    "href": "clases/01_00_intro.html#herramientas-al-servicio-de-las-preguntas",
-    "title": "",
-    "section": "Herramientas al servicio de las preguntas",
-    "text": "Herramientas al servicio de las preguntas\nSin embargo, es fundamental mantener una perspectiva crítica y equilibrada. Las herramientas digitales son precisamente eso: herramientas. Su valor no radica en su sofisticación técnica, sino en su capacidad para ayudarnos a responder preguntas lingüísticas significativas. Un análisis estadístico complejo sin una pregunta de investigación clara carece de sentido; del mismo modo, el acceso a corpus masivos no reemplaza la necesidad de reflexión teórica y rigor metodológico.\nConocer las herramientas digitales disponibles, entender sus posibilidades y limitaciones, y saber cuándo y cómo aplicarlas son competencias esenciales para el lingüista contemporáneo. Pero estas competencias deben estar siempre al servicio de la curiosidad intelectual, del pensamiento crítico y de preguntas de investigación bien formuladas. Las tecnologías cambian rápidamente, pero las buenas preguntas y el rigor metodológico permanecen como el corazón de cualquier investigación científica.\nEste curso busca equiparles con el conocimiento práctico de diversas herramientas digitales, pero sobre todo, desarrollar en ustedes la capacidad de evaluar críticamente cuándo, cómo y por qué utilizarlas en función de sus propios objetivos de investigación.\n«La educación debe formar, retomando una fórmula convertida en banal, no un técnico, sino simplemente un hombre, sin más especificación. De ahí el nombre de “humanidades”, que se relaciona todavía con lo que se llama también educación liberal. Esta denominación se remonta al mundo antiguo. El género humano estaba dividido en hombres libres y esclavos. Los oficios productivos eran para los esclavos, que recibían el nombre poco halagador de “serviles”. Eran necesarios para satisfacer las necesidades elementales: alimentarse, vestirse, alojarse, necesidades que no diferencian esencialmente al animal del ser humano. Por el contrario, los hombres libres no tenían que trabajar [en oficios serviles]. Se ocupaban de gobernar la ciudad y de defenderla con las armas si fuera necesario. Podían, consecuentemente, consagrarse a actividades que elegían según su interés. Estas actividades dignas de los hombres libres se denominaban por esta razón “liberales”. Los hombres libres eran, de esta manera, los únicos hombres en el verdadero sentido del término. Los estudios liberales podían por tanto denominarse igualmente “inquietud por la humanidad” (studium humanitatis), o simplemente humanidades» (Brague 2016, 273)."
-  },
-  {
-    "objectID": "clases/01_00_intro.html#objetivos-del-curso",
-    "href": "clases/01_00_intro.html#objetivos-del-curso",
-    "title": "",
-    "section": "Objetivos del curso",
-    "text": "Objetivos del curso\nEsto trajo consigo el debate de si las humanidades digitales podían ser consideradas realmente una nueva disciplina. Terras recoge la opinión de un académico que decía: «Hey, you write with a ballpoint pen, and I write with a ballpoint pen… Let’s make us the Blue Pen Club! It is what we write with the pen that is important, not the technology» (Terras 2013, 74). Sin embargo, en la actualidad parece cada vez más claro que los métodos, los resultados y las interpretaciones de las humanidades digitales difieren cada vez más de las humanidades tradicionales. El objeto de estudio sigue siendo el mismo, pero se mira desde otras perspectivas, se relaciona de manera distinta. Además, se está demandando una nueva crítica para todos aquellos fenómenos que se definen más por el proceso que por el objeto resultante.\nEsta división en las humanidades es debida a que se enfrentan a retos y problemas diferentes. Las humanidades digitales se plantean cuestiones que sería imposible abarcar con los métodos tradicionales. Los resultados que se obtienes son también peculiares. Y las interpretaciones tendrán que ser acordes a estas innovaciones. El lenguaje del que se sirven las humanidades digitales es el propio de la tecnología informática: el mundo es representado por una serie numérica que puede ser modificada por algoritmos. Esto nos lleva a una nueva forma de entender la cultura (episteme) que genera nuevos conocimientos y técnicas para el control de la memoria (techne) (Berry 2012, 2). Este nuevo lenguaje posibilita nuevas formas de colaboración entre los investigadores que a su vez genera la conexión de millones de datos que hasta ahora permanecían aislados. ## Referencias\nBrague, Rémi. 2016. La sabiduría de las edades: Historia de las humanidades. Madrid: Ediciones Encuentro."
+    "text": "¡Comencemos!\nAprovecha al máximo esta oportunidad de ampliar tus herramientas metodológicas.\nSiguiente tema"
   },
   {
     "objectID": "demo.html",
@@ -291,14 +508,14 @@
     "href": "references.html",
     "title": "Referencias",
     "section": "",
-    "text": "Burdick, Anne, Johanna Drucker, Peter Lunenfeld, Todd Presner y Jeffrey Schnapp. «A Short Guide to the Digital_Humanities». MIT Press (2012)."
+    "text": "Burdick, Anne, Johanna Drucker, Peter Lunenfeld, Todd Presner y Jeffrey Schnapp. «A Short Guide to the Digital_Humanities». MIT Press (2012).\n\n\nhttps://doi.org/10.5944/rhd.vol.1.2017.16675"
   },
   {
     "objectID": "references.html#clase-1",
     "href": "references.html#clase-1",
     "title": "Referencias",
     "section": "",
-    "text": "Burdick, Anne, Johanna Drucker, Peter Lunenfeld, Todd Presner y Jeffrey Schnapp. «A Short Guide to the Digital_Humanities». MIT Press (2012)."
+    "text": "Burdick, Anne, Johanna Drucker, Peter Lunenfeld, Todd Presner y Jeffrey Schnapp. «A Short Guide to the Digital_Humanities». MIT Press (2012).\n\n\nhttps://doi.org/10.5944/rhd.vol.1.2017.16675"
   },
   {
     "objectID": "references.html#bases-de-datos",
