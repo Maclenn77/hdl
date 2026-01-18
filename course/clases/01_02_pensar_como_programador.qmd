@@ -11,6 +11,7 @@ title: Pensar como programador
   allowfullscreen>
 </iframe>
 
----
+<hr>
+
 [Tema anterior](../clases/00_00_presentacion.qmd) | [Siguiente tema](01_02_pensar_como_programador.qmd)
 
