@@ -8,10 +8,10 @@ title: "Herramientas digitales para lingüística"
 
 ### Introducción
 
-- [Presentación del curso y objetivos de aprendizaje](clases/01_01_presentación.qmd)
-- Importancia de las herramientas digitales en lingüística
-- Visión general de las tecnologías y lenguajes de programación
-- Configuración del entorno de trabajo
+- [Presentación del curso y objetivos de aprendizaje](clases/01_00_presentación.qmd)
+- [¿Cómo las herramientas digitales apoyan la investigación lingüística?](clases/01_01_intro.qmd)
+- [Pensar como programador](clases/01_02_pensar_como_programador.qmd)
+- [Configuración del entorno de trabajo](tutorials/index.html)
 
 ### Control de Versiones con Git y GitHub
 
